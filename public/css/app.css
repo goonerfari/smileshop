@@ -6024,10 +6024,6 @@ h1, h2, h3 {
 #single-product .socials .fa-envira {
   font-size: 20px; }
 
-#single-product .product-path, #single-product .product-path a {
-  font-size: 25px;
-  margin: 26px auto 40px; }
-
 #single-product h4 {
   text-transform: capitalize;
   font-family: "Baloo Tamma", cursive; }
@@ -6055,6 +6051,20 @@ h1, h2, h3 {
     font-weight: 300;
     text-transform: capitalize;
     padding-left: 23px; }
+
+.product-path, .product-path a {
+  font-size: 25px;
+  margin: 26px auto 40px; }
+
+@media (max-width: 767px) {
+  #single-product .product-attr {
+    padding-left: 0px; }
+  #single-product .single-product .btn {
+    float: right; } }
+
+#cart_container .cart-image {
+  width: 125px;
+  height: 125px; }
 
 #main-banner {
   padding-top: 35px;

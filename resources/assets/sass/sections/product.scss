@@ -17,10 +17,7 @@
             }
     }
 
-    .product-path, .product-path a{
-        font-size: 25px;
-        margin: 26px auto 40px;
-    }
+    
     h4 {
         text-transform: capitalize;
         font-family: $font-baloo;
@@ -57,4 +54,22 @@
         }
     }
     
+}
+
+.product-path, .product-path a{
+    font-size: 25px;
+    margin: 26px auto 40px;
+}
+
+@media #{$mobile} {
+    #single-product {
+        .product-attr {
+            padding-left: 0px;
+        }
+        .single-product {
+            .btn {
+                float: right;
+            }
+        }
+    }
 }

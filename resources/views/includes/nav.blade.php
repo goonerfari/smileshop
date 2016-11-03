@@ -13,9 +13,9 @@
 
         <div id="navbar" class="collapse navbar-collapse">
 
-            <a class="hidden-xs" href="#"><img src="{{ asset('about/logo.jpg') }}"></a>
+            <a class="hidden-xs" href="{{ url('/') }}"><img src="{{ asset('about/logo.jpg') }}"></a>
             <ul id="nav-nav" class="nav navbar-nav navbar-right">
-                <li id="home-link" class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
+                <li id="home-link" class="{{ Request::is('/') ? "active" : "" }}"><a href="{{ url('/') }}">Home</a></li>
                 <li class="{{ Request::is('blog') ? "active" : "" }}"><a href="/blog">Blog</a></li>
                 <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contact">About + Contact</a></li>
                 <li class="ul-dropdown">

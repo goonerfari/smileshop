@@ -2,9 +2,8 @@
 
 @section('content')
 
-    <div class="container">
-        <p><a href="{{ url('shop') }}">Home</a> / Cart</p>
-        <h1>Your Cart</h1>
+    <div class="container" id="cart_container">
+        <h4 class="product-path"><a href="{{ url('shop') }}">Home</a> / Cart </h4>
 
         <hr>
 
@@ -37,8 +36,11 @@
                 <tbody>
                     @foreach (Cart::content() as $item)
                     <tr>
-                        <td class="table-image"><a href="{{ url('shop', [$item->product->slug]) }}"><img src="{{ asset('images/' . $item->product->image) }}" alt="product" class="img-responsive cart-image"></a></td>
-                        <td><a href="{{ url('shop', [$item->product->slug]) }}">{{ $item->name }}</a></td>
+                        <td class="table-image">
+                            <a href="{{ url('shop', [$item->product->slug]) }}"><img src="{{ $item->product->image }}" alt="product" class="cart-image"></a>
+                        </td>
+                        <td>
+                            <a href="{{ url('shop', [$item->product->slug]) }}">{{ $item->name }}</a></td>
                         <td>
                             <select class="quantity" data-id="{{ $item->rowid }}">
                                 <option {{ $item->qty == 1 ? 'selected' : '' }}>1</option>

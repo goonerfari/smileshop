@@ -43,7 +43,7 @@ class CartController extends Controller
     public function shop()
     {
         $categories = Category::all();
-        $products = Product::orderBy('id', 'desc')->paginate(10);
+        $products = Product::orderBy('id', 'desc')->paginate(12);
         return view('shop')->withProducts($products)->withCategories($categories);
     }
     /**
