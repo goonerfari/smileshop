@@ -1,0 +1,27 @@
+#returns_container {
+    font-family: $font-goudy;
+    font-size: 20px;
+    h1 {
+        padding: 30px 0px 50px;
+    }
+    h2 {
+        color: $orange;
+    }
+    address {
+        font-family: $font-mont;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    a, a:hover {
+        color: $orange;
+    }
+}
+
+@media #{$mobile} {
+    #returns_container { 
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+}

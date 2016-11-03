@@ -1,0 +1,19 @@
+#terms_container, #privacy_container {
+    font-family: $font-goudy;
+    font-size: 20px;
+    h1 {
+        padding: 30px 0px 50px;
+    }
+    h2 {
+        color: $orange;
+        font-size: 40px;
+    }
+}
+
+@media #{$mobile} {
+    #terms_container, #privacy_container { 
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+}

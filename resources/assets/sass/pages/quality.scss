@@ -1,0 +1,43 @@
+#quality_container {
+    font-family: $font-goudy;
+    font-size: 20px;
+    h1 {
+        padding: 30px 0px 50px;
+    }
+    h2 {
+        color: $orange;
+    }
+    ul {
+        list-style: none;
+        li {
+            line-height: 1.5;
+            padding-bottom: 15px;
+        }
+        .fa {
+            padding-right: 10px;
+        }
+        b {
+            padding-right: 10px;
+            font-family: $font-mont;
+            color: $dark-green;
+        }
+    }
+}
+
+@media #{$mobile} {
+    #quality_container, .quality {
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .quality {
+        margin-top: 40px;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    #quality_container {
+        h1 {
+            font-size: 48px;
+        }
+    }
+} 

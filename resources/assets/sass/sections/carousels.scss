@@ -1,0 +1,83 @@
+#main-banner {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: $grey;
+    #main-carousel {
+        padding-left: 15px;
+        padding-right: 15px;
+        .carousel-inner {
+            max-height: 350px;
+        }
+    }
+    .carousel-indicators {
+        bottom: 0px;
+        z-index: 1;
+    }
+    .carousel-control.right, .carousel-control.left {
+        background: none;
+    }
+    .carousel-indicators li, .carousel-indicators li .active {
+        background-color: $orange;
+        height: 15px;
+        width: 15px;
+        margin: 0;
+    }
+    .carousel-indicators li .active {
+        margin: 0;
+    }
+    .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {
+        background-color: $orange;
+        padding-top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    #best-seller {
+
+        .size {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .caption {
+            font-size: 17px;
+            color: $white;
+            font-family: $font-mont;
+            background-color: $green;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            margin-top: 30%;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    #best-seller {
+        height: 350px;
+        .border {
+            padding: 0px;
+            height: 47.5%;
+            .caption {
+                padding: 8px 30px;
+            }
+        }
+        .top {
+            margin-top: 0px;
+            background-image: url('../../../public/main-banner/bestsell/bulk.jpg');
+            background-repeat: no-repeat;
+            margin-bottom: 5%;
+        }
+        .bottom {
+            background-image: url('../../../public/main-banner/bestsell/herbs.jpg');
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+@media #{$tablet} {
+    #best-seller {
+        height: 287.4px;
+    }
+}

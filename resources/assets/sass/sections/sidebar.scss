@@ -1,0 +1,30 @@
+#sidebar {
+    padding-left: 0px;
+    padding-right: 0px;
+    h3 {
+        font-size: 35px;
+        margin-bottom: 25px;
+        color: $orange;
+        font-family: $font-baloo;
+    }
+    ul {
+        padding-left: 10px;
+        list-style: none;
+        margin-bottom: 20px;
+        li {
+            padding: 8px 0px;
+            a {
+                color: $dark-green;
+                text-transform: uppercase;
+                font-family: $font-mont;
+                letter-spacing: 1.3px;
+                &:hover {
+                    font-weight: 700;
+                }
+                .fa.fa-envira {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

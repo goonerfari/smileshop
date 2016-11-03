@@ -1,0 +1,60 @@
+#single-product {
+    .socials{
+         .fa {
+            font-size: 30px;
+            margin-right: 5px;
+            border-radius: 50%;
+
+        }
+        
+            .btn-facebook {color:#3b5998; padding: 0px 5px;}
+            .btn-google-plus{color:#dd4b39;}
+            .btn-instagram{color:#517fa4;}
+            .btn-pinterest{color:#cb2027;}
+            .btn-twitter{color:#2ba9e1;}
+            .fa-envira {
+                font-size: 20px;
+            }
+    }
+
+    .product-path, .product-path a{
+        font-size: 25px;
+        margin: 26px auto 40px;
+    }
+    h4 {
+        text-transform: capitalize;
+        font-family: $font-baloo;
+        a {
+            text-transform: uppercase;
+            color: $orange;
+        }
+    }
+
+    h1 {
+        text-transform: capitalize;
+    }
+    .product-attr {
+        list-style: none;
+        font-family: $font-mont;
+        text-transform: uppercase;
+        font-weight: bold;
+        li {
+            padding-bottom: 12px;
+            i {
+                color: $orange;
+                padding-right: 5px;
+            }
+            label {
+                letter-spacing: 1pt;
+                color: $orange;
+            }
+        }
+        
+        span {
+            font-weight: 300;
+            text-transform: capitalize;
+            padding-left: 23px;
+        }
+    }
+    
+}

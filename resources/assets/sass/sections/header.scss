@@ -1,0 +1,44 @@
+#header {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    
+    
+    h1, h2 {
+        color: $orange;
+        font-family: $font-baloo;
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 35px;
+        font-weight: normal;
+        color: $dark-green;
+    }
+    .btn {
+        color: $white;
+        font-size: 17px;
+        font-family: $font-mont;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        letter-spacing: 0.4px;
+        &:hover {
+            opacity: .91;
+        }
+    }
+ 
+}
+
+/*----------- MOBILE ------------*/
+
+@media #{$mobile} {
+    #header {
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+#mission_container {
+    padding-top: 30px;
+
+    .mission {
+        font-family: $font-goudy;
+        h2 {
+            color: $orange;
+            padding-bottom: 10px;
+            font-size: 40px;
+        }
+        
+        font-size: 20px;
+        color: $grey;
+        ul {
+            list-style: none;
+            li {
+                line-height: 1.5;
+                padding-bottom: 10px;
+                i {
+                    padding-right: 20px;
+                }    
+            }
+            
+        }
+    }
+}
+
+@media #{$mobile} {
+    #mission_container { 
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+}

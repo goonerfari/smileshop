@@ -1,0 +1,61 @@
+#beginnings_container {
+    p {
+        font-family: $font-goudy;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.5;
+        padding-left: 40px;
+        color: $grey;
+        
+    }
+    span {
+        float: left; 
+        padding-right: 60px;
+    }
+    #first_beginning {
+        text-indent: 60px;
+        display: initial;
+    }
+    h1 {
+        padding: 30px 0px 40px;
+    }
+    .pull-left {
+        padding: 0px 57px 30px 45px;
+
+    }
+    .pull-right {
+        padding: 20px 0px 25px 45px;
+    }
+}
+
+@media #{$desktop} {
+    #beginnings_container {
+        .pull-left {
+            padding: 0px 51px 30px 40px;
+            width: 500px;
+        }
+    }
+}
+@media #{$tablet} {
+    #beginnings_container {
+        p {
+            padding-left: 0px;
+        }
+        .pull-left {
+            width: 400px;
+            padding-left: 0px;
+        }
+    }    
+}
+
+@media #{$mobile} {
+    #beginnings_container {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            padding-left: 0px;
+            padding-bottom: 10px;
+        }
+    }
+}

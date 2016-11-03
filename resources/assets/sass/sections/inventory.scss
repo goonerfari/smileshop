@@ -1,0 +1,75 @@
+#content {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    text-align: center;
+    h2 {
+        color: $dark-green;
+        font-size: 45px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .product {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-family: $font-mont;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        img {
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid $dark-green;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .product_name {
+            font-size: 17px;
+            letter-spacing: .7px;
+            color: $ultra-orange;
+            font-family: $font-rale;
+            font-weight: 600;
+        }
+        .product_label {
+            color: $dark-green;
+            text-align: left;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        .product_description, .product_benefit, .product_price {
+            font-size: 12px;
+            margin-bottom: 7px;
+            text-transform: capitalize;
+        }
+        .product_description, .product_benefit {
+            font-family: $font-rale;
+        }
+        .product_price {
+            color: $ultra-orange;
+            font-size: 20px;
+            float: right;
+            margin-bottom: 0px;
+            padding-right: 50px;
+        }
+        .price_label {
+            float: left;
+            padding-top: 5px;
+            color: $dark-green;
+            font-weight: bold;
+        }
+        .btn-dark-green {
+            margin-top: 10px;
+            width: 80%;
+        }
+
+    }
+}
+
+/*----------- MOBILE ------------*/
+
+@media #{$mobile} {
+    #content  {
+        .product img {
+            width: 100%;
+        }
+    }
+}

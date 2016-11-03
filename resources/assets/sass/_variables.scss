@@ -1,0 +1,52 @@
+//Fonts
+$font-baloo: 'Baloo Tamma', cursive;
+$font-mont: 'Montserrat', sans-serif;
+$font-rale: 'Raleway', sans-serif;
+$font-goudy: 'Sorts Mill Goudy', serif;
+// Body
+$body-bg: #f5f8fa;
+
+$green: rgba(0, 140, 62, .8);
+$dark-green: rgba(20, 61, 45, 1);
+$ultra-green: rgba(0, 239, 141, 0.8);
+$orange: rgba(200, 40, 0, .8);
+$ultra-orange: rgba(250, 80, 0, 1);
+$red: rgba(195,0,39, 1);
+$black: #000;
+$grey: rgba(21, 26, 24, .89);
+$white: #fff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger:  #bf5329;
+
+// Typography
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: rgba(21, 26, 24, .89);
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-orange: rgba(230, 80, 40, .8);
+$btn-dark-green: rgba(20, 61, 45, 1);
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;

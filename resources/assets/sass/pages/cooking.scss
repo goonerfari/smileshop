@@ -1,0 +1,52 @@
+#cooking_container {
+  margin-top: 35px;
+  h3 {
+    color: $orange;
+  }
+  h2 {
+    color: $dark-green;
+  }
+  h2:last-child {
+    color: $orange;
+  }
+  p {
+    font-family: $font-goudy;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  li {
+    font-family: $font-mont;
+    font-size: 14px;
+  }
+  .dish {
+    p:last-child {
+      margin-bottom: 0px;
+    }
+    margin: 10px 0px;
+  }
+  #cooking {
+    margin-top: 100px;
+    padding-left: 0px;
+
+    a, a::after, a:visited, .navbar-inverse .navbar-nav > li > a {
+        color: $dark-green;
+        font-family: $font-baloo;
+        font-size: 18px;
+        background-color: $body-bg;
+    }
+    #cooking-nav li a:hover {
+        color: $orange;
+        background-color: $body-bg;
+    }
+  }   
+}
+
+@media #{$mobile} {
+    #cooking_container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+} 

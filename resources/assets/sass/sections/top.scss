@@ -1,0 +1,138 @@
+/*------TOP-----*/
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-color: $grey;
+    border: 0px;
+}
+.navbar-default .navbar-brand{
+    font-family: $font-baloo;
+    color: $grey;
+    font-size: 25px;
+    padding-top: 20px;
+}
+#top {
+    margin-bottom: 0px;
+    border-bottom: 1px solid $white;
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+        color: $ultra-green;
+        background-color: $grey;
+    }
+    .navbar-default {
+        background-color: $grey;
+        border-bottom: 1px solid $grey;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+
+    #login-div, #cart-div {
+        border-radius: 2px;
+        border: 1.5px solid $white;
+        margin-top: 8px;
+        li {
+            padding: auto 5px;
+            a {
+                text-transform: uppercase;
+                
+            }
+        }
+        #user-menu {
+            color: $ultra-green;
+            &:focus, &:hover {
+                color: $ultra-green;
+            }
+        }
+        .dropdown .dropdown-toggle a:hover {
+            color: $white;
+        }
+        .dropdown .open .dropdown-toggle a:hover {
+            color: $grey;
+        }
+        .dropdown-toggle a:hover {
+            color: $grey;
+        }
+        .dropdown-menu li a {
+            color: $grey;
+        }
+    }
+    #login-div {
+        a {
+            font-weight: 600;
+            padding: 5px 37px;
+            letter-spacing: 1.5pt;
+            font-size: 13px;
+            
+            i {
+                margin-left: 5px;
+            }
+        }
+        #account-link a:hover {
+            color: $ultra-green;
+        }
+        #register-link a:hover {
+            color: $ultra-orange;
+        }
+        #span-link p{
+            color: $white;
+            padding: 0px;
+            padding-top: 5px;
+            margin-left: -6px;
+            margin-bottom: 0px;
+            &:hover {
+                cursor: default;
+            }
+
+        }
+    }
+    #cart-div {
+        float: right;    
+        font-family: $font-baloo;    
+        &:hover {
+            border-color: $ultra-green;
+        }
+        a {
+            padding: 5px 25px 2px;
+            letter-spacing: .5pt;
+            font-size: 24px;
+            &:hover, &:focus {
+                color: $ultra-green;
+            }
+            i {
+                font-size: 22px;
+                padding-right: 15px;
+            }
+        }
+    }
+    
+    #search-product-form {
+        width: 260px;
+        margin-right: 50px;
+        .input-group-btn {
+            background-color: rgba(0, 192, 95, .8);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+}
+
+/*----------- TABLET ------------*/
+
+@media #{$tablet} {
+    #top {
+        .container, .bs-example-navbar-collapse-1 {
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        #search-product-form {
+            width: 200px;
+            margin-right: 15px;
+        }
+    }
+}
+
+@media #{$mobile} {
+    
+}

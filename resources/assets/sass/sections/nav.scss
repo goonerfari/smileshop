@@ -1,0 +1,139 @@
+/*------NAVIGATION-----*/
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+    color: rgba(0, 40, 62, 1);
+    background-color: rgba(0, 140, 62, 0);
+}
+    .navbar-default .navbar-nav > li > a {
+        color: $white;
+    }
+
+
+#nav {
+    border-width: 1px;
+    border-color: $white;
+    border-width: 1px;
+    font-size: 20px;
+    border-radius: 1px;
+    background-color: $green;
+    
+}
+#navbar {
+    margin-bottom: 0px;
+    img {
+        height: 80px;
+        width: 140px;
+        margin-left: 35px;
+    }
+
+}
+#nav-nav {
+    text-align: right;
+    margin-right: 10px;
+    display: inline;
+    padding-left: 0px;
+    padding-top: 10px;
+    li {
+        padding-left: 15px;
+        margin-top: 15px;
+        display: block;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a {
+        font-family: $font-mont;
+
+    }
+    .fa {
+        padding-left: 12px;
+    }
+}
+#search-product-form {
+    padding-top: 7px;
+}
+.fixed {
+    position: fixed;
+    margin-top: -51px;
+    z-index: 4000;
+    float: right;
+}
+
+#category-nav, #brand-nav {
+    padding-top: 0px;
+    color: $white;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5pt;
+    span {
+        font-family: $font-mont;
+        font-size: 20px;
+        color: $white;
+        padding-right: 15px;
+        .fa .fa-caret-down {
+            padding-left: 10px;
+        }
+    }
+    li, a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    li {
+        &:first-child {
+            margin-top: 15px;
+        }
+        a {
+            color: $white;
+            text-transform: uppercase;
+            font-family: $font-mont !important;
+            letter-spacing: 2.5pt;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+#category-nav {
+    margin-top: 22px; 
+    
+}
+
+#brand-nav {
+    margin-bottom: 18px;
+    margin-top: 27px;
+}
+
+.ul-dropdown {
+    padding: 0px;
+}
+
+/*-----------SEARCH ---------------*/
+
+@media #{$mobile} {
+    #nav {
+        background-color: #31a264;
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+        margin-top: 0px;
+    }
+    #search-product-form-mobile {
+        margin-top: 70px;
+    }
+    #nav-nav li {
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}
+/*----------- NAV ------------*/
+
+@media #{$tablet} {
+    #nav {
+
+        #navbar img {
+            width: inherit;
+            margin-left: 0px;
+        }
+    }
+}
