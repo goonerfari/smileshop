@@ -12,7 +12,7 @@
 
         <hr>
 
-        <div class="row .single-product">
+        <div class="container .single-product">
             <div class="col-md-6">
                 <img src="{{ $product->image }}" alt="product" class="img-responsive">
 

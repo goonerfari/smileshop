@@ -6038,7 +6038,10 @@ h1, h2, h3 {
   font-family: "Baloo Tamma", cursive; }
   #single-product h4 a {
     text-transform: uppercase;
-    color: rgba(200, 40, 0, 0.8); }
+    color: rgba(200, 40, 0, 0.8);
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 15px; }
 
 #single-product h1 {
   text-transform: capitalize; }
