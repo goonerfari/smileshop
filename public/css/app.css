@@ -3934,7 +3934,7 @@ tbody.collapse.in {
   .navbar-default .navbar-form {
     border-color: #d3e0e9; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #eeeeee;
+    background-color: rgba(21, 26, 24, 0.89);
     color: #555; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -5796,7 +5796,8 @@ h1, h2, h3 {
   #top #login-div, #top #cart-div {
     border-radius: 2px;
     border: 1.5px solid #fff;
-    margin-top: 8px; }
+    margin-top: 8px;
+    background-color: rgba(21, 26, 24, 0.89); }
     #top #login-div li, #top #cart-div li {
       padding: auto 5px; }
       #top #login-div li a, #top #cart-div li a {
