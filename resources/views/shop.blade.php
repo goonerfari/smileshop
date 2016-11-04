@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="shop_container container">
 
         <div id="sidebar" class="col-md-4 affix">
             @include('includes.shopsidebar')
@@ -18,7 +18,6 @@
                         <a href="{{ route('products.single', $product->slug) }}"><h3>{{ $product->name }}</h3></a>
 
                                        
-                        <p class="product_name">{{ $product->name }}</p>
 
                         <p class="product_label">Description:</p>
                         <p class="text-left product_description" style="height: 55px;">{{ $product->description }}</p>
@@ -61,13 +60,29 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
-        $(window).scroll(function() {
-            if($(this).scrollTop() > 151) {
-                $(".affix").css('margin-top', '-115px');
-            }
-            else {
-                $(".affix").css('margin-top', '40px');
-            }   
+        $(document).ready(function () {
+            $(window).scroll(function() {    
+                var scroll = $(document).scrollTop();
+
+                
+                 if (scroll > 140 && scroll < 1050) {
+                    $('#sidebar').css("margin-top", "-85px");
+                    $('#sidebar').addClass("affix");
+                    $('#content').addClass("col-md-offset-4");
+                }
+                else if (scroll < 700) {
+                    $('#sidebar').css("margin-top", "0px");
+                    $('#sidebar').removeClass("affix");
+                    $('#content').removeClass("col-md-offset-4");
+                }
+                else {
+                    $('#sidebar').removeClass("affix");
+                    $('#sidebar').css("margin-top", "0px");
+                    $('#content').removeClass("col-md-offset-4");
+                }
+                
+            });
         });
+        
     </script>
 @endsection

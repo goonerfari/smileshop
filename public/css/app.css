@@ -6000,6 +6000,15 @@ h1, h2, h3 {
   #header h2 {
     font-size: 25px; } }
 
+.shop_container {
+  margin-top: 35px; }
+  .shop_container .product-path, .shop_container .product-path a {
+    font-size: 25px;
+    margin: 26px auto 40px; }
+  .shop_container h3 {
+    text-transform: capitalize;
+    color: rgba(200, 40, 0, 0.8); }
+
 #single-product .socials .fa {
   font-size: 30px;
   margin-right: 5px;
@@ -6051,10 +6060,6 @@ h1, h2, h3 {
     font-weight: 300;
     text-transform: capitalize;
     padding-left: 23px; }
-
-.product-path, .product-path a {
-  font-size: 25px;
-  margin: 26px auto 40px; }
 
 @media (max-width: 767px) {
   #single-product .product-attr {
