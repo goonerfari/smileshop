@@ -112,6 +112,7 @@
 
 @media #{$mobile} {
     #blog_container {
+        padding: 0px;
         h1 {
             font-size: 48px;
             margin-top: 20px;

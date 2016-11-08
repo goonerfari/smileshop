@@ -24,12 +24,12 @@
         </div>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-xs-12">
 		<h1 class="text-center">Mr Smiles' Health Blog</h1>
 	</div>
 
     
-	<div class="col-md-12">
+	<div class="col-xs-12">
 		<div class="col-md-7" id="blog_posts">
 			@foreach ($posts as $post)
 

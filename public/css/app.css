@@ -6290,6 +6290,8 @@ h1, h2, h3 {
   .remedies, .mission {
     padding-left: 0px;
     padding-right: 0px; }
+  #messageus_container form {
+    margin-bottom: 20px; }
   #about_container h1 {
     margin-top: 80px; } }
 
@@ -6362,7 +6364,8 @@ textarea.parsley-error {
 
 @media (max-width: 767px) {
   #beginnings_container h1 {
-    font-size: 50px; }
+    font-size: 50px;
+    margin-top: 50px; }
   #beginnings_container p {
     padding-left: 0px;
     padding-bottom: 10px; } }
@@ -6388,7 +6391,8 @@ textarea.parsley-error {
 @media (max-width: 767px) {
   #mission_container {
     padding-left: 0px;
-    padding-right: 0px; } }
+    padding-right: 0px;
+    margin-top: 40px; } }
 
 #cooking_container {
   margin-top: 35px; }
@@ -6426,7 +6430,11 @@ textarea.parsley-error {
     padding-left: 0px;
     padding-right: 0px; }
   h1 {
-    font-size: 48px; } }
+    font-size: 48px;
+    margin-top: 50px;
+    padding: 48px 0px 20px; }
+  address {
+    padding: 10px; } }
 
 #quality_container {
   font-family: "Sorts Mill Goudy", serif;
@@ -6488,7 +6496,11 @@ textarea.parsley-error {
 @media (max-width: 767px) {
   #terms_container, #privacy_container {
     padding-left: 0px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+    #terms_container p, #privacy_container p {
+      padding: 0px 10px; }
+    #terms_container h1, #privacy_container h1 {
+      padding-top: 45px; } }
 
 #sidebar {
   padding-left: 0px;
@@ -6659,11 +6671,13 @@ textarea.parsley-error {
   background-color: #fff; }
 
 @media (max-width: 767px) {
-  #blog_container h1 {
-    font-size: 48px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding-bottom: 0px; }
+  #blog_container {
+    padding: 0px; }
+    #blog_container h1 {
+      font-size: 48px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
   #single-blade-blog img {
     margin-top: 40px; } }
 
