@@ -30,7 +30,10 @@
                         <input type="hidden" name="id" value="{{ $product->id }}">
                         <input type="hidden" name="name" value="{{ $product->name }}">
                         <input type="hidden" name="price" value="{{ $product->price }}">
-                        <input type="submit" class="btn btn-success btn-md" style="margin-top: 20px;" value="Add to Cart">
+                        <span class="visible-xs">
+                            <br>
+                        </span>
+                        <input type="submit" class="btn btn-success btn-md text-center" style="margin: 40px 0px 20px 80px;" value="Add to Cart">
                     </form>
                 </div>
             @endforeach

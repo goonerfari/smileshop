@@ -3754,7 +3754,7 @@ tbody.collapse.in {
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 4px; }
   .navbar-toggle:focus {
     outline: 0; }
@@ -3925,11 +3925,11 @@ tbody.collapse.in {
     color: #ccc;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
-    border-color: #ddd; }
+    border-color: rgba(21, 26, 24, 0.89); }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: #ddd; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: rgba(21, 26, 24, 0.89); }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #d3e0e9; }
@@ -3987,7 +3987,7 @@ tbody.collapse.in {
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
       background-color: #333; }
     .navbar-inverse .navbar-toggle .icon-bar {
-      background-color: #fff; }
+      background-color: rgba(21, 26, 24, 0.89); }
   .navbar-inverse .navbar-collapse,
   .navbar-inverse .navbar-form {
     border-color: #101010; }
@@ -5782,6 +5782,12 @@ h1, h2, h3 {
   font-size: 25px;
   padding-top: 20px; }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(0, 140, 62, 0.8); }
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: rgba(21, 26, 24, 0.89); }
+
 #top {
   margin-bottom: 0px;
   border-bottom: 1px solid #fff; }
@@ -5863,7 +5869,11 @@ h1, h2, h3 {
     padding-right: 0px; }
   #top #search-product-form {
     width: 200px;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  #top #login-div {
+    margin-left: 20px; }
+  #top #cart-div {
+    margin-right: 20px; } }
 
 /*------NAVIGATION-----*/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
@@ -5969,7 +5979,9 @@ h1, h2, h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   #nav #navbar img {
     width: inherit;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  #nav li {
+    padding-left: 0px; } }
 
 #header {
   padding-top: 45px;
@@ -5989,6 +6001,7 @@ h1, h2, h3 {
     font-size: 17px;
     font-family: "Montserrat", sans-serif;
     margin-top: 40px;
+    text-transform: capitalize;
     margin-bottom: 0px;
     letter-spacing: 0.4px; }
     #header .btn:hover {
@@ -5996,10 +6009,13 @@ h1, h2, h3 {
 
 /*----------- MOBILE ------------*/
 @media (max-width: 767px) {
-  #header h1 {
-    font-size: 40px; }
-  #header h2 {
-    font-size: 25px; } }
+  #header {
+    padding-top: 65px;
+    padding-bottom: 20px; }
+    #header h1 {
+      font-size: 40px; }
+    #header h2 {
+      font-size: 25px; } }
 
 .shop_container {
   margin-top: 35px; }
@@ -6108,13 +6124,29 @@ h1, h2, h3 {
   #main-banner #best-seller .caption {
     font-size: 17px;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
-    background-color: rgba(0, 140, 62, 0.8);
+    font-family: "Baloo Tamma", cursive;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     margin-top: 30%;
     letter-spacing: 1.5px; }
+  #main-banner #best-seller .bulk {
+    margin-top: 0px;
+    background-image: url("../images/main-banner/bestsell/bulk.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 5%; }
+    #main-banner #best-seller .bulk .caption {
+      background-color: rgba(0, 140, 62, 0.9); }
+  #main-banner #best-seller .supplements {
+    background-image: url("../images/main-banner/bestsell/herbs.jpg");
+    background-repeat: no-repeat; }
+    #main-banner #best-seller .supplements .caption {
+      background-color: rgba(0, 80, 120, 0.9); }
+  #main-banner #best-seller .nutrition {
+    background-image: url("../images/main-banner/bestsell/sport.jpg");
+    background-repeat: no-repeat; }
+    #main-banner #best-seller .nutrition .caption {
+      background-color: rgba(200, 40, 0, 0.9); }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #best-seller {
@@ -6123,19 +6155,46 @@ h1, h2, h3 {
       padding: 0px;
       height: 47.5%; }
       #best-seller .border .caption {
-        padding: 8px 30px; }
-    #best-seller .top {
-      margin-top: 0px;
-      background-image: url("../../../public/main-banner/bestsell/bulk.jpg");
-      background-repeat: no-repeat;
-      margin-bottom: 5%; }
-    #best-seller .bottom {
-      background-image: url("../../../public/main-banner/bestsell/herbs.jpg");
-      background-repeat: no-repeat; } }
+        padding: 8px 30px;
+        margin-top: 30%; }
+    #best-seller .bulk {
+      background-color: rgba(0, 140, 62, 0.8); }
+    #best-seller .supplements {
+      background-color: navy; }
+    #best-seller .nutrition {
+      background-color: rgba(200, 40, 0, 0.8); } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #best-seller {
     height: 287.4px; } }
+
+@media (max-width: 767px) {
+  #main-banner {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    #main-banner .container, #main-banner #main-carousel {
+      padding: 0px; }
+      #main-banner .container .carousel-control, #main-banner #main-carousel .carousel-control {
+        opacity: 1; }
+        #main-banner .container .carousel-control .glyphicon-chevron-right, #main-banner .container .carousel-control .glyphicon-chevron-left, #main-banner #main-carousel .carousel-control .glyphicon-chevron-right, #main-banner #main-carousel .carousel-control .glyphicon-chevron-left {
+          background-color: rgba(200, 40, 0, 0.9);
+          padding-top: 15px; }
+        #main-banner .container .carousel-control .glyphicon-chevron-right, #main-banner #main-carousel .carousel-control .glyphicon-chevron-right {
+          margin-right: -20px; }
+        #main-banner .container .carousel-control .glyphicon-chevron-left, #main-banner #main-carousel .carousel-control .glyphicon-chevron-left {
+          margin-left: -20px; }
+    #main-banner #best-seller {
+      padding: 20px 0px 0px 0px; }
+      #main-banner #best-seller .border {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 140px; }
+        #main-banner #best-seller .border .caption {
+          padding: 7px;
+          font-size: 15px;
+          letter-spacing: 1.3px;
+          margin-top: 50%; } }
 
 #about_container, #contact_container, #messageus_container {
   padding-left: 0px;
@@ -6389,15 +6448,13 @@ textarea.parsley-error {
       color: #143d2d; }
 
 @media (max-width: 767px) {
-  #quality_container, .quality {
-    padding-left: 5px;
-    padding-right: 0px; }
   .quality {
     margin-top: 40px; }
     .quality h2 {
       margin-bottom: 20px; }
   #quality_container h1 {
-    font-size: 48px; } }
+    font-size: 48px;
+    margin-top: 50px; } }
 
 #returns_container {
   font-family: "Sorts Mill Goudy", serif;
@@ -6610,16 +6667,10 @@ textarea.parsley-error {
   #single-blade-blog img {
     margin-top: 40px; } }
 
-footer {
+#footer {
   padding-top: 30px;
-  font-family: "Montserrat", sans-serif; }
-  footer #copyright, footer #footer {
-    background-color: rgba(0, 140, 62, 0.8); }
-    footer #copyright p, footer #footer p {
-      padding-top: 15px;
-      font-family: "Montserrat", sans-serif; }
-      footer #copyright p span, footer #copyright p a, footer #footer p span, footer #footer p a {
-        color: #fff; }
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 140, 62, 0.8); }
 
 #footer {
   color: #fff;

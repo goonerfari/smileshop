@@ -19,9 +19,7 @@
       @yield('content')
 
     <!--FOOTER-->
-<footer>
     @include('includes.footer')
-</footer>
 
 
 

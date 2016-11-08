@@ -21,7 +21,7 @@
             </ul>
         </div>
 
-        <div class="remedies col-md-4">
+        <div class="remedies col-xs-12 col-md-4 col-md-offset-7 affix">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3>Interested in Herbal Remedies?</h3>
@@ -39,4 +39,17 @@
 
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 151) {
+                $(".affix").css('margin-top', '-160px');
+            }
+            else {
+                $(".affix").css('margin-top', '40px');
+            }   
+        });
+    </script>
 @endsection

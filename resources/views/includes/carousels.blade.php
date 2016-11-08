@@ -1,5 +1,5 @@
 <div class="container">
-    <div id="main-carousel" class="col-md-8 carousel slide" data-ride="carousel">
+    <div id="main-carousel" class="col-xs-12 col-md-8 carousel slide" data-ride="carousel">
     <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -27,16 +27,22 @@
     </div>
 
     <!--BEST SELLERS-->
-    <div id="best-seller" class="col-md-4">
-        <div class="col-md-12 border top">
+    <div id="best-seller" class="col-xs-12 col-md-4">
+        <div class="col-md-12 col-xs-4 border bulk">
             <a href="#" role="button" aria-pressed="true">
                 <div class="caption center-block">Bulk Spices</div>
             </a>
         </div>
 
-        <div class="col-md-12 border bottom">
+        <div class="col-md-12 col-xs-4 border supplements">
             <a href="#" role="button" aria-pressed="true">
                 <div class="caption center-block">Supplements</div>
+            </a>
+        </div>
+
+        <div class="col-md-12 col-xs-4 border nutrition visible-xs">
+            <a href="#" role="button" aria-pressed="true">
+                <div class="caption center-block">Nutrition</div>
             </a>
         </div>
     </div>

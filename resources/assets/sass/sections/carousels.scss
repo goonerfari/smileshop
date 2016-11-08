@@ -42,14 +42,37 @@
         .caption {
             font-size: 17px;
             color: $white;
-            font-family: $font-mont;
-            background-color: $green;
+            font-family: $font-baloo;
             text-transform: uppercase;
             text-align: center;
             width: 100%;
             margin-top: 30%;
             letter-spacing: 1.5px;
         }
+        .bulk {
+            .caption {
+                background-color: rgba(0, 140, 62, 0.9);
+            }
+            margin-top: 0px;
+            background-image: url('../images/main-banner/bestsell/bulk.jpg');
+            background-repeat: no-repeat;
+            margin-bottom: 5%;
+        }
+        .supplements {
+            .caption {
+                background-color: rgba(0, 80, 120, .9);
+            }
+            background-image: url('../images/main-banner/bestsell/herbs.jpg');
+            background-repeat: no-repeat;
+        }
+        .nutrition {
+            .caption {
+                background-color: rgba(200, 40, 0, .9);
+            }
+            background-image: url('../images/main-banner/bestsell/sport.jpg');
+            background-repeat: no-repeat;
+        }
+
     }
 }
 
@@ -61,23 +84,62 @@
             height: 47.5%;
             .caption {
                 padding: 8px 30px;
+                margin-top: 30%;
             }
         }
-        .top {
-            margin-top: 0px;
-            background-image: url('../../../public/main-banner/bestsell/bulk.jpg');
-            background-repeat: no-repeat;
-            margin-bottom: 5%;
+        .bulk {
+            background-color: $green;
         }
-        .bottom {
-            background-image: url('../../../public/main-banner/bestsell/herbs.jpg');
-            background-repeat: no-repeat;
+        .supplements {
+            background-color: navy;
         }
+        .nutrition {
+            background-color: $orange;
+        }
+        
     }
 
 }
 @media #{$tablet} {
     #best-seller {
         height: 287.4px;
+    }
+}
+
+@media #{$mobile} {
+    #main-banner {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        .container, #main-carousel  {
+            padding: 0px;
+            .carousel-control {
+                opacity: 1;
+                .glyphicon-chevron-right, .glyphicon-chevron-left {
+                    background-color: rgba(200, 40, 0, 0.9);
+                    padding-top: 15px;
+                }
+                .glyphicon-chevron-right {
+                    margin-right: -20px;
+                }
+                .glyphicon-chevron-left {
+                    margin-left: -20px;
+                }
+            }
+        }
+        #best-seller {
+            padding: 20px 0px 0px 0px;
+            .border {
+                margin-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                height: 140px;
+                .caption {
+                    padding: 7px;
+                    font-size: 15px;
+                    letter-spacing: 1.3px;
+                    margin-top: 50%;
+                }
+            }
+        }
     }
 }

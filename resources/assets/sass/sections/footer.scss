@@ -1,17 +1,7 @@
-footer {
+#footer {
     padding-top: 30px;
     font-family: $font-mont;
-
-    #copyright, #footer {
-        background-color: $green;
-        p {
-            padding-top: 15px;
-            font-family: $font-mont;
-            span, a {
-                color: #fff;
-            }
-        }
-    }
+    background-color: $green;
     
 }
 

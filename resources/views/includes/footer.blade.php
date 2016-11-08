@@ -76,14 +76,7 @@
     </div>
 </div>
 
-<div id="copyright" class="container-fluid" id="copyright">
-    <p class="text-center">
-        <span class="copyright__text">
-            <a href="/terms.asp" title="Terms">Copyright © <span class="insertYear"></span>&nbsp;<span class="company_name">Smile Herb Shop.</span>&nbsp;All Rights Reserved.</a>
-        <!--  -->
-        </span>
-    </p>
-</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
     $(document).ready(function() {

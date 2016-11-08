@@ -5,17 +5,17 @@
 @section('content')
 
 <div id="quality_container" class="container">
-    <div class="col-md-12">
+    <div class="col-xs-12">
         <h1 class="text-center">Quality Assurance</h1>
     </div>
-    <div class="mission col-md-7">
+    <div class="mission col-xs-12 col-md-7">
         <p>Here at Smile Herb Shop, our products are carefully selected by professional herbalists; real practitioners with real experience fulfilling the needs of people like you. We don’t just sell the hottest new fad in alternative medicine, we offer the products we trust and use for ourselves and our families.</p>
         <p>Many of our product lines are founded by members of the American Herbalists Guild, folks who, like Tom Wolfe, co-owner of Smile, have been studying and practicing herbalism for 40+ years. In fact Tom knows many of these founding herbalists personally, and he knows the thought behind their formulations and standards. We feel confident that our friends and fellow practitioners are the people behind many of the products on our shelves.</p>
         <p>As well as being well-grounded in the long-standing herbal community, Smile Herb Shop is also committed to staying informed of the newest and most exciting breakthroughs in herbal medicine and alternative healing today. Always open to what’s best for the client, we look for the best and brightest of new upcoming companies, formulations, and plant extracts to bring to our customers.</p>
     </div>
 
     
-    <div class="remedies col-md-4 col-md-offset-1">
+    <div class="remedies col-xs-12 col-md-4 col-md-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3>Interested in Herbal Remedies?</h3>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="quality col-md-12">
+    <div class="quality col-xs-12">
         <h2>What we look for:</h2>
         <ul class="list-group">
             <li><i class="fa fa-envira" aria-hidden="true"></i>

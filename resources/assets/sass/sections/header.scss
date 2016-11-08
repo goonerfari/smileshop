@@ -21,6 +21,7 @@
         font-size: 17px;
         font-family: $font-mont;
         margin-top: 40px;
+        text-transform: capitalize;
         margin-bottom: 0px;
         letter-spacing: 0.4px;
         &:hover {
@@ -40,5 +41,7 @@
         h2 {
             font-size: 25px;
         }
+        padding-top: 65px;
+        padding-bottom: 20px;
     }
 }
