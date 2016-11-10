@@ -48,7 +48,7 @@
                 <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contact">About + Contact</a></li>
                 <li class="ul-dropdown">
                     <ul id="category-nav" class="visible-xs nav nav-navbar navbar-right"><span>Shop by Category<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 10px;"></i></span>
-                        <div class="list" style="overflow-y: scroll; height: 250px;">
+                        <div class="list" style="overflow-y: scroll; height: 225px;">
                             <li style="margin-top: 6px;">
                                 
                                 <a href="{{ url('blogcats/allergies') }}">Allergies
@@ -132,7 +132,7 @@
                 </li>
                 <li class="ul-dropdown">
                     <ul id="brand-nav" class="visible-xs nav nav-navbar navbar-right"><span>Shop by Brand<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 10px;"></i></span>
-                        <div class="list" style="overflow-y: scroll;height: 250px;">
+                        <div class="list" style="overflow-y: scroll;height: px;">
                             <li style="margin-top: 15px;">
                             
                                 <a href="{{ url('blogcats/allergies') }}">Allergies
