@@ -5903,7 +5903,7 @@ h1, h2, h3 {
     #cart-div a, #login-div a {
       font-family: "Baloo Tamma", cursive; }
     #cart-div a, #cart-div a > i, #login-div a, #login-div a > i {
-      color: #c82800; }
+      color: #fff; }
   #login-div-mobile li {
     display: inline-block;
     float: left;
