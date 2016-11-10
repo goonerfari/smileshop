@@ -5910,11 +5910,11 @@ h1, h2, h3 {
     font-family: "Baloo Tamma", cursive;
     float: right; }
   #login-div-mobile #account-link-mobile a, #login-div-mobile #register-link-mobile a {
-    color: #143d2d !important; } }
+    color: #000 !important; } }
 
 /*------NAVIGATION-----*/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
-  color: #00283e;
+  color: #000;
   background-color: rgba(0, 140, 62, 0); }
 
 .navbar-default .navbar-nav > li > a {

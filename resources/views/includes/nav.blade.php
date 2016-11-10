@@ -49,7 +49,7 @@
                 <li class="ul-dropdown">
                     <ul id="category-nav" class="visible-xs nav nav-navbar navbar-right"><span>Shop by Category<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 10px;"></i></span>
                         <div class="list" style="overflow-y: scroll; height: 250px;">
-                            <li style="margin-top: 15px;">
+                            <li style="margin-top: 6px;">
                                 
                                 <a href="{{ url('blogcats/allergies') }}">Allergies
                                     <i class="fa fa-envira" aria-hidden="true"></i>
