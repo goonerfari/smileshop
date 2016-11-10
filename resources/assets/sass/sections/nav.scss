@@ -42,6 +42,7 @@
     }
     a {
         font-family: $font-mont;
+        padding: 3px 6px;
 
     }
     .fa {
@@ -94,13 +95,12 @@
     }
 }
 
-#category-nav {
-    margin-top: 22px; 
+#category-nav, #brand-nav {
+    margin-top: -3px; 
 }
 
 #brand-nav {
-    margin-bottom: 18px;
-    margin-top: 27px;
+    padding-bottom: 18px;
 }
 
 .ul-dropdown {

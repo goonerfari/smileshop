@@ -5949,7 +5949,8 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-weight: bold; }
   #nav-nav a {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    padding: 3px 6px; }
   #nav-nav .fa {
     padding-left: 12px; }
 
@@ -5991,12 +5992,11 @@ h1, h2, h3 {
       font-size: 14px;
       font-weight: bold; }
 
-#category-nav {
-  margin-top: 22px; }
+#category-nav, #brand-nav {
+  margin-top: -3px; }
 
 #brand-nav {
-  margin-bottom: 18px;
-  margin-top: 27px; }
+  padding-bottom: 18px; }
 
 .ul-dropdown {
   padding: 0px; }
