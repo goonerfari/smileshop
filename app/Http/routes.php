@@ -9,7 +9,6 @@ use App\User;
 use Illuminate\Support\Facades\Input;
 
 
-Route::group(['middleware' => ['guest']], function () {
     Route::get('contact', 'PagesController@getContact');
     Route::post('contact', 'PagesController@postContact');
     Route::get('about', 'PagesController@getAbout');
@@ -44,7 +43,7 @@ Route::group(['middleware' => ['guest']], function () {
     Route::delete('comments/{id}', ['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
     Route::get('comments/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
 
-    // Product Categories
+    // Search
 
     Route::any('/search-product',function(){
         $q = Input::get ( 'q' );
@@ -65,7 +64,6 @@ Route::group(['middleware' => ['guest']], function () {
         else 
             return view('queries.post')->withErrors(['msg', 'No Details found. Try to search again !']);
     });
-});
 
 
 // Categories

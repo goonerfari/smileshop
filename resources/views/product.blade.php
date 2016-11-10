@@ -3,8 +3,7 @@
 @section('content')
 
     <div class="container">
-        <p><a href="/shop">Shop</a> / {{ $product->name }}</p>
-        <h1>{{ $product->name }}</h1>
+        @include('includes.path')
 
         <hr>
 

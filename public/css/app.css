@@ -3935,18 +3935,18 @@ tbody.collapse.in {
     border-color: #d3e0e9; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: rgba(21, 26, 24, 0.89);
-    color: #555; }
+    color: #fff; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #777; }
+      color: #fff; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
+        color: #fff;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #555;
+      color: #fff;
       background-color: #eeeeee; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-      color: #ccc;
+      color: #fff;
       background-color: transparent; } }
   .navbar-default .navbar-link {
     color: #777; }
@@ -5769,6 +5769,16 @@ h1, h2, h3 {
   #body h1 {
     margin-top: 60px; } }
 
+.product-path {
+  text-transform: capitalize;
+  font-family: "Baloo Tamma", cursive; }
+  .product-path a {
+    text-transform: uppercase;
+    color: rgba(200, 40, 0, 0.8);
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 15px; }
+
 /*------TOP-----*/
 .navbar {
   border-radius: 0px;
@@ -5847,12 +5857,14 @@ h1, h2, h3 {
     #top #cart-div a {
       padding: 5px 25px 2px;
       letter-spacing: .5pt;
-      font-size: 24px; }
+      font-size: 24px;
+      color: rgba(0, 239, 141, 0.8); }
       #top #cart-div a:hover, #top #cart-div a:focus {
         color: rgba(0, 239, 141, 0.8); }
       #top #cart-div a i {
         font-size: 22px;
-        padding-right: 15px; }
+        padding-right: 15px;
+        color: rgba(0, 239, 141, 0.8); }
   #top #search-product-form {
     width: 260px;
     margin-right: 50px; }
@@ -5874,6 +5886,31 @@ h1, h2, h3 {
     margin-left: 20px; }
   #top #cart-div {
     margin-right: 20px; } }
+
+@media (max-width: 767px) {
+  #user-menu {
+    font-family: "Baloo Tamma", cursive;
+    text-align: right;
+    color: rgba(21, 26, 24, 0.89);
+    background-color: #31a264; }
+  .navbar-default .navbar-brand {
+    font-size: 20px;
+    padding-left: 5px; }
+  #cart-div, #login-div {
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px; }
+    #cart-div a, #login-div a {
+      font-family: "Baloo Tamma", cursive; }
+    #cart-div a, #cart-div a > i, #login-div a, #login-div a > i {
+      color: #c82800; }
+  #login-div-mobile li {
+    display: inline-block;
+    float: left;
+    font-family: "Baloo Tamma", cursive;
+    float: right; }
+  #login-div-mobile #account-link-mobile a, #login-div-mobile #register-link-mobile a {
+    color: #143d2d !important; } }
 
 /*------NAVIGATION-----*/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
@@ -5942,15 +5979,17 @@ h1, h2, h3 {
   #category-nav li, #category-nav a, #brand-nav li, #brand-nav a {
     padding-left: 0px !important;
     padding-right: 0px !important; }
-  #category-nav li:first-child, #brand-nav li:first-child {
-    margin-top: 15px; }
-  #category-nav li a, #brand-nav li a {
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif !important;
-    letter-spacing: 2.5pt;
-    font-size: 15px;
-    font-weight: bold; }
+  #category-nav li, #brand-nav li {
+    margin-top: 0px; }
+    #category-nav li:first-child, #brand-nav li:first-child {
+      margin-top: 15px; }
+    #category-nav li a, #brand-nav li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif !important;
+      letter-spacing: 2.5pt;
+      font-size: 14px;
+      font-weight: bold; }
 
 #category-nav {
   margin-top: 22px; }
@@ -5973,7 +6012,7 @@ h1, h2, h3 {
   #search-product-form-mobile {
     margin-top: 70px; }
   #nav-nav li:first-child {
-    margin-top: 0px; } }
+    margin-top: -23px; } }
 
 /*----------- NAV ------------*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6013,7 +6052,8 @@ h1, h2, h3 {
     padding-top: 65px;
     padding-bottom: 20px; }
     #header h1 {
-      font-size: 40px; }
+      font-size: 40px;
+      margin-top: 30px; }
     #header h2 {
       font-size: 25px; } }
 
@@ -6050,16 +6090,6 @@ h1, h2, h3 {
 #single-product .socials .fa-envira {
   font-size: 20px; }
 
-#single-product h4 {
-  text-transform: capitalize;
-  font-family: "Baloo Tamma", cursive; }
-  #single-product h4 a {
-    text-transform: uppercase;
-    color: rgba(200, 40, 0, 0.8);
-    font-size: 26px;
-    padding-top: 10px;
-    padding-bottom: 15px; }
-
 #single-product h1 {
   text-transform: capitalize; }
 
@@ -6087,9 +6117,23 @@ h1, h2, h3 {
   #single-product .single-product .btn {
     float: right; } }
 
-#cart_container .cart-image {
-  width: 125px;
-  height: 125px; }
+#cart_container {
+  padding: 30px 15px; }
+  #cart_container .cart-image {
+    width: 125px;
+    height: 125px; }
+
+@media (max-width: 767px) {
+  #cart_container {
+    margin-top: 25px; }
+    #cart_container .btn {
+      padding: 6px 12px;
+      font-size: 14px; }
+    #cart_container .cart-image {
+      width: 100px;
+      height: 100px; }
+    #cart_container .btn-delete {
+      padding: 0px 4px; } }
 
 #main-banner {
   padding-top: 35px;
@@ -6429,10 +6473,10 @@ textarea.parsley-error {
   #cooking_container {
     padding-left: 0px;
     padding-right: 0px; }
-  h1 {
-    font-size: 48px;
-    margin-top: 50px;
-    padding: 48px 0px 20px; }
+    #cooking_container h1 {
+      font-size: 48px;
+      margin-top: 50px;
+      padding: 48px 0px 20px; }
   address {
     padding: 10px; } }
 
@@ -6589,7 +6633,7 @@ textarea.parsley-error {
   margin-top: 20px;
   margin-bottom: 20px; }
   #blog_container h1 {
-    padding-bottom: 50px;
+    padding-bottom: 23px;
     font-size: 55px; }
   #blog_container .post-title, #blog_container .post-title a, #blog_container .lead a {
     color: #143d2d;

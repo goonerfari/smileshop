@@ -104,12 +104,14 @@
             padding: 5px 25px 2px;
             letter-spacing: .5pt;
             font-size: 24px;
+            color: $ultra-green;
             &:hover, &:focus {
                 color: $ultra-green;
             }
             i {
                 font-size: 22px;
                 padding-right: 15px;
+                color: $ultra-green;
             }
         }
     }
@@ -150,5 +152,40 @@
 }
 
 @media #{$mobile} {
+    #user-menu {
+        font-family: $font-baloo;
+        text-align: right;
+        color: $grey;
+        background-color: #31a264;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+
+    #cart-div,#login-div {
+        float: right;
+        margin-right: 25px;
+        margin-top: 10px;
+        a {
+            font-family: $font-baloo;
+        }
+        a, a > i {
+            color: rgba(200, 40, 0, 1);
+        }
+    }
     
+    #login-div-mobile {
+        li {
+            display: inline-block;
+            float: left;
+            font-family: $font-baloo;
+            float: right;
+        }
+        #account-link-mobile, #register-link-mobile {
+            a {
+                color: $dark-green !important;
+            }
+        }
+    }
 }

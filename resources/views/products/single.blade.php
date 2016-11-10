@@ -6,7 +6,8 @@
 @section('content')
 
 	<div id="single-product" class="container">
-        <h4 class="product-path"><a href="/shop">Shop</a> / {{ $product->name }}</h4>
+        @include('includes.path')
+        
 
         <h1>{{ $product->name }}</h1>
 

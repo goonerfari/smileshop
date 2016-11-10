@@ -56,7 +56,7 @@
                             <form action="{{ url('cart', [$item->rowid]) }}" method="POST" class="side-by-side">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger btn-sm" style="border-radius: 50%;"><i class="fa fa-times" style="font-size: 15px;" aria-hidden="true"></i></button>
+                                <button type="submit" class="btn btn-danger btn-delete" style="border-radius: 50%;"><i class="fa fa-times" style="font-size: 15px;" aria-hidden="true"></i></button>
                             </form>
 
                         </td>
@@ -75,21 +75,21 @@
                 </tbody>
             </table>
 
-            <a href="/shop" class="btn btn-primary btn-lg">Continue Shopping</a> &nbsp;
-            <a href="#" class="btn btn-success btn-lg">Proceed to Checkout</a>
+            <a id="continue" href="/shop" class="btn btn-primary btn-md">Continue Shopping</a> &nbsp;
+            <a href="#" class="btn btn-success btn-md">Checkout</a>
 
             <div style="float:right">
                 <form action="/emptyCart" method="POST">
                     {!! csrf_field() !!}
                     <input type="hidden" name="_method" value="DELETE">
-                    <input type="submit" class="btn btn-danger btn-lg" value="Empty Cart">
+                    <input type="submit" class="btn btn-danger btn-md" value="Empty Cart">
                 </form>
             </div>
 
         @else
 
             <h3>You have no items in your shopping cart</h3>
-            <a href="/shop" class="btn btn-primary btn-lg">Continue Shopping</a>
+            <a href="/shop" class="btn btn-primary btn-md">Continue Shopping</a>
 
         @endif
 

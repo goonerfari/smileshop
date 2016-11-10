@@ -79,8 +79,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
         $(window).scroll(function() {
-            if($(this).scrollTop() > 201) {
-                $(".affix").css('margin-top', '-270px');
+            if($(this).scrollTop() > 221) {
+                $(".affix").css('margin-top', '-220px');
             }
             else {
                 $(".affix").css('margin-top', '40px');

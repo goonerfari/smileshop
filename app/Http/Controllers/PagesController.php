@@ -13,6 +13,7 @@ use Session;
 
 class PagesController extends Controller {
 
+ 
     public function getIndex() {
         $categories = Category::all();
         $products = Product::orderBy('id', 'desc')->paginate(8);
@@ -58,6 +59,8 @@ class PagesController extends Controller {
 
         return redirect('/');
     }
+
+
 
     public function register()
     {

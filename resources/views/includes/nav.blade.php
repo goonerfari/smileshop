@@ -8,12 +8,39 @@
             <span class="icon-bar"></span>
           </button>
             <a class="navbar-brand visible-xs" href="{{ url('/') }}">Smiles' Herb Shop</a>
-          
+            <div id="cart-div" class="visible-xs">
+                <a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ({{ Cart::instance('main')->count(false) }})</a>
+            </div>
         </div>
-
+        
         <div id="navbar" class="collapse navbar-collapse">
 
             <a class="hidden-xs" href="{{ url('/') }}"><img src="{{ asset('about/logo.jpg') }}"></a>
+            <ul id="login-div-mobile" class="nav navbar-nav navbar-right visible-xs">
+                @if (Auth::guest())
+                    <li id="account-link-mobile"><a href="{{ url('/login') }}">My Account</a></li>
+                    <li id="register-link-mobile"><a href="{{ url('/register') }}">Register</a></li>
+                @else
+                    <li class="dropdown">
+                        <a id="user-menu" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            @if(Auth::user()->is_admin == 1 )
+                                <li><a href="{{ url('categories') }}"></i>Categories</a></li>
+                                <li><a href="{{ url('posts') }}">Posts</a></li>
+                                <li><a href="{{ url('products') }}">Products</a></li>
+                                <li><a href="{{ url('tags') }}">Tags</a></li>
+                            @endif 
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
+                        </ul>
+
+                    </li>
+                @endif
+            </ul>
+
             <ul id="nav-nav" class="nav navbar-nav navbar-right">
                 <li id="home-link" class="{{ Request::is('/') ? "active" : "" }}"><a href="{{ url('/') }}">Home</a></li>
                 <li class="{{ Request::is('shop') ? "active" : "" }}"><a href="{{ url('/shop') }}">Shop</a></li>
@@ -21,7 +48,7 @@
                 <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contact">About + Contact</a></li>
                 <li class="ul-dropdown">
                     <ul id="category-nav" class="visible-xs nav nav-navbar navbar-right"><span>Shop by Category<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 10px;"></i></span>
-                        <div class="list" style="overflow-y: scroll; height: 300px;">
+                        <div class="list" style="overflow-y: scroll; height: 250px;">
                             <li style="margin-top: 15px;">
                                 
                                 <a href="{{ url('blogcats/allergies') }}">Allergies
@@ -105,7 +132,7 @@
                 </li>
                 <li class="ul-dropdown">
                     <ul id="brand-nav" class="visible-xs nav nav-navbar navbar-right"><span>Shop by Brand<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 10px;"></i></span>
-                        <div class="list" style="overflow-y: scroll;height: 300px;">
+                        <div class="list" style="overflow-y: scroll;height: 250px;">
                             <li style="margin-top: 15px;">
                             
                                 <a href="{{ url('blogcats/allergies') }}">Allergies

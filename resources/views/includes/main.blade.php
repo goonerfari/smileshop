@@ -33,7 +33,7 @@
                         <span class="visible-xs">
                             <br>
                         </span>
-                        <input type="submit" class="btn btn-success btn-md text-center" style="margin: 40px 0px 20px 80px;" value="Add to Cart">
+                        <input type="submit" class="btn btn-success btn-md text-center" style="margin: 20px 0px;" value="Add to Cart">
                     </form>
                 </div>
             @endforeach

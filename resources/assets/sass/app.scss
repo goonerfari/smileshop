@@ -64,6 +64,17 @@ $mobile: "(max-width: 767px)";
     }
 }
 
+.product-path {
+    text-transform: capitalize;
+    font-family: $font-baloo;
+    a {
+        text-transform: uppercase;
+        color: $orange;
+        font-size: 26px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+}
 // Top
 
 @import "sections/top.scss";

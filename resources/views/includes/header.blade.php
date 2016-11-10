@@ -1,6 +1,6 @@
 <div class="col-xs-12 text-center">
-    <div class="col-sm-6">
-        <h1>Welcome to Mr. Smile's Herb Shop!<h1> 
+    <div class="col-xs-12 col-sm-6">
+        <h1>Welcome to Mr. Smile's Herb Shop!</h1> 
         <h2>Your neighborhood store gone digital</h2>
     </div>
     <div class="col-sm-6">

@@ -87,15 +87,15 @@
             text-transform: uppercase;
             font-family: $font-mont !important;
             letter-spacing: 2.5pt;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
         }
+        margin-top: 0px;
     }
 }
 
 #category-nav {
     margin-top: 22px; 
-    
 }
 
 #brand-nav {
@@ -122,7 +122,7 @@
     }
     #nav-nav li {
         &:first-child {
-            margin-top: 0px;
+            margin-top: -23px;
         }
     }
 }

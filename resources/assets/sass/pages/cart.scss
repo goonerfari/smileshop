@@ -1,6 +1,24 @@
 #cart_container {
+    padding: 30px 15px;
     .cart-image {
         width: 125px;
         height: 125px;
+    }
+}
+
+@media #{$mobile} {
+    #cart_container {
+        margin-top: 25px;
+        .btn {
+            padding: 6px 12px;
+            font-size: 14px;
+        }
+        .cart-image {
+            width: 100px;
+            height: 100px;
+        }
+        .btn-delete {
+            padding: 0px 4px;
+        }
     }
 }

@@ -21,7 +21,7 @@ class CartController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('cart');
+        return view('cart')->withProducts($products);
     }
 
     /**
@@ -32,12 +32,13 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
+        $products = Product::all();
         if (Cart::search(['id' => $request->id])) {
             return redirect('cart')->withSuccessMessage('Item is already in your cart!');
         }
 
         Cart::associate('Product','App')->add($request->id, $request->name, 1, $request->price);
-        return redirect('cart')->withSuccessMessage('Item was added to your cart!');
+        return redirect('cart')->withSuccessMessage('Item was added to your cart!')->withProducts($products);
     }
 
     public function shop()
