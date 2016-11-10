@@ -25,9 +25,11 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
     </div>
-
+    
     <!--BEST SELLERS-->
     <div id="best-seller" class="col-xs-12 col-md-4">
+        <hr class="visible-xs" style="width: 80%; border-color: green; border-top-width: 2px;">
+
         <div class="col-md-12 col-xs-4 border bulk">
             <a href="#" role="button" aria-pressed="true">
                 <div class="caption center-block">Bulk Spices</div>

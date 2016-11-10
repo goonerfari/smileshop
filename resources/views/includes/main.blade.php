@@ -24,6 +24,7 @@
                     <span class="product_price text-right">
                         ${{ $product->price }}.99
                     </span>
+                    <br>
 
                     <form action="/cart" method="POST" class="side-by-side">
                         {!! csrf_field() !!}
@@ -33,7 +34,9 @@
                         <span class="visible-xs">
                             <br>
                         </span>
-                        <input type="submit" class="btn btn-success btn-md text-center" style="margin: 20px 0px;" value="Add to Cart">
+                        <div class="col-md-12 text-center">
+                            <input type="submit" class="btn btn-success btn-md text-center" style="margin: 15px;" value="Add to Cart">
+                        </div>
                     </form>
                 </div>
             @endforeach

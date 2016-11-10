@@ -5903,7 +5903,8 @@ h1, h2, h3 {
     #cart-div a, #login-div a {
       font-family: "Baloo Tamma", cursive; }
     #cart-div a, #cart-div a > i, #login-div a, #login-div a > i {
-      color: #fff; }
+      color: #fff;
+      font-size: 25px; }
   #login-div-mobile li {
     display: inline-block;
     float: left;
@@ -6214,6 +6215,7 @@ h1, h2, h3 {
 
 @media (max-width: 767px) {
   #main-banner {
+    background-color: #fff;
     padding-top: 0px;
     padding-bottom: 0px; }
     #main-banner .container, #main-banner #main-carousel {
@@ -6228,7 +6230,7 @@ h1, h2, h3 {
         #main-banner .container .carousel-control .glyphicon-chevron-left, #main-banner #main-carousel .carousel-control .glyphicon-chevron-left {
           margin-left: -20px; }
     #main-banner #best-seller {
-      padding: 20px 0px 0px 0px; }
+      padding: 0px; }
       #main-banner #best-seller .border {
         margin-bottom: 0px;
         padding-left: 0px;
