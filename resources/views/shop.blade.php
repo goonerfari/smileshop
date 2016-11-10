@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="shop_container container">
+    <div class="shop_container container" style="margin-top: 60px;">
 
         <div id="sidebar" class="col-md-4 affix">
             @include('includes.shopsidebar')
@@ -32,12 +32,19 @@
                             ${{ $product->price }}.99
                         </span>
 
+                        <br>
+
                         <form action="/cart" method="POST" class="side-by-side">
                             {!! csrf_field() !!}
                             <input type="hidden" name="id" value="{{ $product->id }}">
                             <input type="hidden" name="name" value="{{ $product->name }}">
                             <input type="hidden" name="price" value="{{ $product->price }}">
-                            <input type="submit" class="btn btn-success btn-md" style="margin-top: 15px;" value="Add to Cart">
+                            <span class="visible-xs">
+                                <br>
+                            </span>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="btn btn-success btn-md text-center" style="margin: 15px;" value="Add to Cart">
+                            </div>
                         </form>
                     </div>
                 @endforeach
