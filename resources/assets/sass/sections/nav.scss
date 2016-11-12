@@ -31,7 +31,7 @@
     margin-right: 10px;
     display: inline;
     padding-left: 0px;
-    margin: 6px -15px -6px;
+    margin: 14px -15px -6px;
     li {
         padding-left: 15px;
         margin-top: 15px;
@@ -117,8 +117,12 @@
         z-index: 9;
         margin-top: 0px;
     }
+
     #search-product-form-mobile {
         margin-top: 70px;
+    }
+    #nav-nav {
+        margin: 6px -15px -6px;
     }
     #nav-nav li {
         &:first-child {

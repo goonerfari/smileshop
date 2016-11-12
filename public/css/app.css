@@ -5894,8 +5894,8 @@ h1, h2, h3 {
     color: rgba(21, 26, 24, 0.89);
     background-color: #31a264; }
   .navbar-default .navbar-brand {
-    font-size: 20px;
-    padding-left: 5px; }
+    font-size: 23px;
+    padding-left: 13px; }
   #cart-div, #login-div {
     float: right;
     margin-right: 25px;
@@ -5941,7 +5941,7 @@ h1, h2, h3 {
   margin-right: 10px;
   display: inline;
   padding-left: 0px;
-  margin: 6px -15px -6px; }
+  margin: 14px -15px -6px; }
   #nav-nav li {
     padding-left: 15px;
     margin-top: 15px;
@@ -6012,6 +6012,8 @@ h1, h2, h3 {
     margin-top: 0px; }
   #search-product-form-mobile {
     margin-top: 70px; }
+  #nav-nav {
+    margin: 6px -15px -6px; }
   #nav-nav li:first-child {
     margin-top: -34px; } }
 
@@ -6067,32 +6069,35 @@ h1, h2, h3 {
     text-transform: capitalize;
     color: rgba(200, 40, 0, 0.8); }
 
+#path-div {
+  margin-top: 20px; }
+
 #single-product .socials .fa {
-  font-size: 30px;
-  margin-right: 5px;
-  border-radius: 50%; }
+  font-size: 23px;
+  border: 2.5px solid #143d2d;
+  border-radius: 5px;
+  padding: 4px 6px;
+  color: #143d2d; }
+  #single-product .socials .fa:hover {
+    color: rgba(200, 40, 0, 0.8);
+    border-color: rgba(200, 40, 0, 0.8); }
 
-#single-product .socials .btn-facebook {
-  color: #3b5998;
-  padding: 0px 5px; }
+#single-product .socials .fa-facebook {
+  padding: 4px 9px; }
 
-#single-product .socials .btn-google-plus {
-  color: #dd4b39; }
+#single-product .price {
+  color: rgba(200, 40, 0, 0.8); }
 
-#single-product .socials .btn-instagram {
-  color: #517fa4; }
-
-#single-product .socials .btn-pinterest {
-  color: #cb2027; }
-
-#single-product .socials .btn-twitter {
-  color: #2ba9e1; }
-
-#single-product .socials .fa-envira {
-  font-size: 20px; }
+#single-product .cents {
+  vertical-align: super;
+  font-size: 18px;
+  margin-left: -5px; }
 
 #single-product h1 {
   text-transform: capitalize; }
+
+#single-product h3 {
+  font-size: 40px; }
 
 #single-product .product-attr {
   list-style: none;
@@ -6112,11 +6117,34 @@ h1, h2, h3 {
     text-transform: capitalize;
     padding-left: 23px; }
 
+#product-interested h4, #product-interested h4 > a {
+  color: rgba(200, 40, 0, 0.8);
+  text-transform: capitalize;
+  font-family: "Baloo Tamma", cursive;
+  font-size: 25px; }
+
+#product-interested label, #product-interested span {
+  font-family: "Montserrat", sans-serif; }
+
+#product-interested label {
+  font-weight: bold; }
+
+#product-interested .price {
+  font-size: 24px; }
+  #product-interested .price .cents {
+    font-size: 13px; }
+
 @media (max-width: 767px) {
-  #single-product .product-attr {
-    padding-left: 0px; }
-  #single-product .single-product .btn {
-    float: right; } }
+  #single-product {
+    margin-top: 50px; }
+    #single-product .product-attr, #single-product .product-attr span {
+      padding-left: 0px; }
+    #single-product .single-product {
+      padding: 0px; }
+      #single-product .single-product .col-xs-12 {
+        padding: 0px 5px; }
+      #single-product .single-product .btn {
+        float: right; } }
 
 #cart_container {
   padding: 30px 15px; }

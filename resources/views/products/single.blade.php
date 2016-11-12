@@ -11,27 +11,27 @@
         </div>
         
 
-        <h1>{{ $product->name }}</h1>
+        <h1 class="text-center">{{ $product->name }}</h1>
 
         <hr>
 
-        <div class="container .single-product">
-            <div class="col-md-6">
+        <div class="container single-product">
+            <div class="col-md-6 col-xs-12">
                 <img src="{{ $product->image }}" alt="product" class="img-responsive">
 
                 <div class="col-md-12 socials">
                     <h3>Share +</h3>
-                    <a href="#" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="btn-social btn-pinterest"><i class="fa fa-pinterest"></i></a>
-                    <a href="#" class="btn-social btn-reddit"><i class="fa fa-reddit"></i></a>
-                    <a href="#" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-reddit"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>            
             </div>
 
-            <div class="col-md-6">
-                <h3>${{ $product->price }}.99</h3>
+            <div class="col-md-6 col-xs-12">
+                <h3 class="price"><span style="font-size: 27px; margin-right: 5px;">$</span>{{ $product->price }} <span class="cents">99</span></h3>
                 <form action="/cart" method="POST" class="side-by-side">
                     {!! csrf_field() !!}
                     <input type="hidden" name="id" value="{{ $product->id }}">
@@ -81,11 +81,11 @@
             </div> <!-- end col-md-8 -->
         </div> <!-- end row -->
 
-        <div class="spacer">
-            <p>Warnings & Disclaimers: * These statements have not been evaluated by the FDA. Do not use if you have a mushroom allergy. Caution: As with any dietary or herbal supplement, you should advise your health care practitioner of the use of this product. If you are nursing, pregnant, or considering pregnancy, you should consult your health care practitioner prior to using this product. This product is not intended to diagnose, treat, cure or prevent any disease; the law applicable to dietary supplements, the Dietary Supplement Health and Education Act of 1994, commonly referred to as DSHEA, does not permit us to do so and it is not our intention to do so. The Contraindications and Potential Drug Interactions information provided on this website is not intended to be all-inclusive. Keep your healthcare provider informed about any herbal and other dietary supplement products that you are taking. </p>
+        <div class="spacer col-md-12">
+            <p><b>Warnings & Disclaimers: * </b> These statements have not been evaluated by the FDA. Do not use if you have a mushroom allergy. Caution: As with any dietary or herbal supplement, you should advise your health care practitioner of the use of this product. If you are nursing, pregnant, or considering pregnancy, you should consult your health care practitioner prior to using this product. This product is not intended to diagnose, treat, cure or prevent any disease; the law applicable to dietary supplements, the Dietary Supplement Health and Education Act of 1994, commonly referred to as DSHEA, does not permit us to do so and it is not our intention to do so. The Contraindications and Potential Drug Interactions information provided on this website is not intended to be all-inclusive. Keep your healthcare provider informed about any herbal and other dietary supplement products that you are taking. </p>
         </div>
 
-        <div class="row" id="product-interested">
+        <div class="col-md-12" id="product-interested">
             <h3>You may also like...</h3>
 
            @foreach ($interested as $product)
@@ -95,7 +95,7 @@
                             <a href="{{ url('shop', [$product->slug]) }}"><img src="{{ $product->image }}" alt="product" class="img-responsive"></a>
                             <h4><a href="{{ url('shop', [$product->slug]) }}">{{ $product->name }}</a></h4>
                             <label for="">Price: </label>
-                            <span>${{ $product->price }}.99</span><br>
+                            <span class="price">${{ $product->price }} <span class="cents">99</span></span><br>
                             <p style="height: 65px;">
                                 <label for="">Benefit: </label>
                                 <span>{{ $product->benefit }}</span>
