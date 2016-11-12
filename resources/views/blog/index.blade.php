@@ -30,7 +30,7 @@
 
     
 	<div class="col-xs-12">
-		<div class="col-md-7" id="blog_posts">
+		<div class="col-xs-12 col-md-7" id="blog_posts">
 			@foreach ($posts as $post)
 
 				<h2>{{ $post->title }}</h2>
@@ -43,7 +43,7 @@
 				<hr>
 			@endforeach
 		</div>
-		<div id="blog_sidebar" class="col-md-3">
+		<div id="blog_sidebar" class="col-md-3 hidden-xs">
 	        <div class="affix col-md-3 col-md-offset-1">
 	            <!-- Blog Search Well -->
 	                <h4 class="text-left">Blog Search</h4>
@@ -68,7 +68,7 @@
 	        </div>
 	    </div>
 	</div>
-    <div class="col-md-7">
+    <div class="col-md-7 col-xs-12">
         <div class="text-center">
             {!! $posts->links() !!}
         </div>

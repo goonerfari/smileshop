@@ -6117,6 +6117,10 @@ h1, h2, h3 {
     text-transform: capitalize;
     padding-left: 23px; }
 
+#single-product .spacer p {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 17px; }
+
 #product-interested h4, #product-interested h4 > a {
   color: rgba(200, 40, 0, 0.8);
   text-transform: capitalize;

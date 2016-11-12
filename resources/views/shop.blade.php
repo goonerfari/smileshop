@@ -4,7 +4,7 @@
 
     <div class="shop_container container" style="margin-top: 60px;">
 
-        <div id="sidebar" class="col-md-4 affix">
+        <div id="sidebar" class="col-md-4 affix hidden-sm">
             @include('includes.shopsidebar')
         </div>
 
