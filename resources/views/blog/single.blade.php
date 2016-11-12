@@ -65,7 +65,7 @@
 			@endforeach
 		</div>
 
-		<div id="comment-form" class="col-md-7" style="margin-top: 50px;">
+		<div id="comment-form" class="col-md-7" style="margin: 50px 0px;">
 			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
 
 				<div class="row">
