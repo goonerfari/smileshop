@@ -5,18 +5,23 @@
 
 @section('content')
 
+    <div class="container visible-xs">
+        <div class="row">
+            <img src="{{ $post->image }}" class="img-responsive" style="margin-top: 90px;" />
+        </div>
+    </div>
 	<div id="single-blade-blog" class="container">
 		<div class="col-md-7" id="single-post">
-			<div class="col-md-12">
-				<img src="{{ $post->image }}" class="img-responsive" />
-			</div>
-			<h2>{{ $post->title }}</h2>
-			<p>{{ $post->body }}</p>
-			<hr>
-			<p>Posted In: {{ $post->category->name }}</p>
+			<div class="col-xs-12">
+				<img src="{{ $post->image }}" class="img-responsive hidden-xs" />
+			    <h2>{{ $post->title }}</h2>
+                <p>{{ $post->body }}</p>
+                <hr>
+                <p>Posted In: {{ $post->category->name }}</p>
+            </div>
 		</div>
 
-		<div id="blog_sidebar" class="col-md-3 hidden-xs">
+		<div id="blog_sidebar" class="col-md-3 hidden-xs hidden-sm">
 	        <div class="affix col-md-3 col-md-offset-1">
 	            <!-- Blog Search Well -->
 	                <h4 class="text-left">Blog Search</h4>
@@ -43,7 +48,7 @@
 		
 		
         
-	    <div class="col-md-7">
+	    <div class="col-xs-12 col-md-7">
 			<h3 class="comments-title"><span class="glyphicon glyphicon-comment"></span>  {{ $post->comments()->count() }} Comments</h3>
 			@foreach($post->comments as $comment)
 				<div class="comment">
@@ -65,7 +70,7 @@
 			@endforeach
 		</div>
 
-		<div id="comment-form" class="col-md-7" style="margin: 50px 0px;">
+		<div id="comment-form" class="col-xs-12 col-md-7" style="margin: 50px 0px;">
 			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
 
 				<div class="row">

@@ -5,7 +5,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container blog" style="margin-top: 65px;">
     <div class="col-md-12">
         <h1 class="text-center">Mr Smiles' Health Blog</h1>
     </div>

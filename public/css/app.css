@@ -6210,8 +6210,7 @@ h1, h2, h3 {
   #main-banner #best-seller .bulk {
     margin-top: 0px;
     background-image: url("../images/main-banner/bestsell/bulk.jpg");
-    background-repeat: no-repeat;
-    margin-bottom: 5%; }
+    background-repeat: no-repeat; }
     #main-banner #best-seller .bulk .caption {
       background-color: rgba(0, 140, 62, 0.9); }
   #main-banner #best-seller .supplements {
@@ -6220,10 +6219,16 @@ h1, h2, h3 {
     #main-banner #best-seller .supplements .caption {
       background-color: rgba(0, 80, 120, 0.9); }
   #main-banner #best-seller .nutrition {
-    background-image: url("../images/main-banner/bestsell/sport.jpg");
+    background-image: url("../images/main-banner/bestsell/nutrition.jpg");
     background-repeat: no-repeat; }
     #main-banner #best-seller .nutrition .caption {
       background-color: rgba(200, 40, 0, 0.9); }
+
+@media (min-width: 1200px) {
+  .bulk, .supplements, .nutrition {
+    margin-bottom: 5%; }
+  .border {
+    padding: 0px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #best-seller {
@@ -6750,12 +6755,17 @@ textarea.parsley-error {
 
 @media (max-width: 767px) {
   #blog_container {
-    padding: 0px; }
+    padding: 0px;
+    margin-top: 40px; }
     #blog_container h1 {
       font-size: 48px;
       margin-top: 20px;
       margin-bottom: 0px;
       padding-bottom: 0px; }
+  .blog {
+    margin-top: 40px; }
+    .blog h1 {
+      font-size: 45px; }
   #single-blade-blog img {
     margin-top: 40px; } }
 

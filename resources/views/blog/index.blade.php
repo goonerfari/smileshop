@@ -4,9 +4,9 @@
 
 @section('content')
 
-<div id="blog_container" class="container">
+<div id="blog_container" class="container blog">
 	
-    <div class="container visible-xs">
+    <div class="container visible-xs visible-sm">
         <div class="col-xs-12">
             <div id="search-blog-form-mobile" style="margin-top: 60px; margin-bottom: 20px;" class="nav navbar-nav navbar-right">
                 <form action="{{ url('search-blog') }}" method="POST" role="search">
@@ -43,7 +43,7 @@
 				<hr>
 			@endforeach
 		</div>
-		<div id="blog_sidebar" class="col-md-3 hidden-xs">
+		<div id="blog_sidebar" class="col-md-3 hidden-sm hidden-xs">
 	        <div class="affix col-md-3 col-md-offset-1">
 	            <!-- Blog Search Well -->
 	                <h4 class="text-left">Blog Search</h4>

@@ -55,7 +55,6 @@
             margin-top: 0px;
             background-image: url('../images/main-banner/bestsell/bulk.jpg');
             background-repeat: no-repeat;
-            margin-bottom: 5%;
         }
         .supplements {
             .caption {
@@ -68,13 +67,21 @@
             .caption {
                 background-color: rgba(200, 40, 0, .9);
             }
-            background-image: url('../images/main-banner/bestsell/sport.jpg');
+            background-image: url('../images/main-banner/bestsell/nutrition.jpg');
             background-repeat: no-repeat;
         }
 
     }
 }
 
+@media #{$large} {
+    .bulk, .supplements, .nutrition {
+        margin-bottom: 5%;
+    }
+    .border {
+        padding: 0px;
+    }
+}
 @media #{$desktop} {
     #best-seller {
         height: 350px;

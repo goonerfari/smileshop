@@ -10,10 +10,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="{{ asset('main-banner/img-1.png') }}">
+              <img src="{{ asset('main-banner/img-4.png') }}">
             </div>
             <div class="item">
-              <img src="{{ asset('main-banner/img-2.png') }}">
+              <img src="{{ asset('main-banner/img-4.png') }}">
+            </div>
+            <div class="item">
+              <img src="{{ asset('main-banner/img-4.png') }}">
             </div>
         </div>
 
@@ -42,7 +45,7 @@
             </a>
         </div>
 
-        <div class="col-md-12 col-xs-4 border nutrition visible-xs">
+        <div class="col-md-12 col-xs-4 border nutrition">
             <a href="#" role="button" aria-pressed="true">
                 <div class="caption center-block">Nutrition</div>
             </a>

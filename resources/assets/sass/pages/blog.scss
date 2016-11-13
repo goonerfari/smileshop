@@ -113,6 +113,7 @@
 @media #{$mobile} {
     #blog_container {
         padding: 0px;
+        margin-top: 40px;
         h1 {
             font-size: 48px;
             margin-top: 20px;
@@ -120,7 +121,12 @@
             padding-bottom: 0px;
         }
     }
-
+    .blog {
+        margin-top: 40px;
+        h1 {
+            font-size: 45px;
+        }
+    }
     #single-blade-blog {
         img {
             margin-top: 40px;
