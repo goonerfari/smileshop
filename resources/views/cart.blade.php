@@ -28,7 +28,6 @@
                         <th>Product</th>
                         <th>Quantity</th>
                         <th>Price</th>
-                        <th class="column-spacer"></th>
                         <th></th>
                     </tr>
                 </thead>
@@ -39,7 +38,7 @@
                         <td class="table-image">
                             <a href="{{ url('shop', [$item->product->slug]) }}"><img src="{{ $item->product->image }}" alt="product" class="cart-image"></a>
                         </td>
-                        <td>
+                        <td class="product-name">
                             <a href="{{ url('shop', [$item->product->slug]) }}">{{ $item->name }}</a></td>
                         <td>
                             <select class="quantity" data-id="{{ $item->rowid }}">
@@ -51,7 +50,6 @@
                             </select>
                         </td>
                         <td>${{ $item->subtotal }}</td>
-                        <td class=""></td>
                         <td>
                             <form action="{{ url('cart', [$item->rowid]) }}" method="POST" class="side-by-side">
                                 {!! csrf_field() !!}
@@ -68,23 +66,23 @@
                         <td style="padding: 40px;"></td>
                         <td class="small-caps table-bg" style="text-align: right">Your Total</td>
                         <td class="table-bg">${{ Cart::total() }}</td>
-                        <td class="column-spacer"></td>
                         <td></td>
                     </tr>
 
                 </tbody>
             </table>
 
-            <a id="continue" href="/shop" class="btn btn-primary btn-md">Continue Shopping</a> &nbsp;
-            <a href="#" class="btn btn-success btn-md">Checkout</a>
-
-            <div style="float:right">
+            <a id="continue" style="float:left; margin-right: 10px;" href="/shop" class="btn btn-primary btn-md">Continue <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> &nbsp;
+            <div style="float:left">
                 <form action="/emptyCart" method="POST">
                     {!! csrf_field() !!}
                     <input type="hidden" name="_method" value="DELETE">
-                    <input type="submit" class="btn btn-danger btn-md" value="Empty Cart">
+                    <input style="margin-right: 10px;" type="submit" class="btn btn-danger btn-md" value="Empty Cart">
                 </form>
             </div>
+            <a href="#" class="btn btn-success btn-md" style="float: right; margin-right: 10px;">Checkout</a>
+
+            
 
         @else
 

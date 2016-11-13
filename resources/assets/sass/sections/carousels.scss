@@ -6,7 +6,7 @@
         padding-left: 15px;
         padding-right: 15px;
         .carousel-inner {
-            max-height: 350px;
+            max-height: 450px;
         }
     }
     .carousel-indicators {
@@ -84,7 +84,7 @@
 }
 @media #{$desktop} {
     #best-seller {
-        height: 350px;
+        height: 450px;
         .border {
             padding: 0px;
             height: 47.5%;

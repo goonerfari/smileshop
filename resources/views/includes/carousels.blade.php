@@ -10,13 +10,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="{{ asset('main-banner/img-4.png') }}">
+              <img src="{{ asset('main-banner/img-1.jpg') }}">
             </div>
             <div class="item">
-              <img src="{{ asset('main-banner/img-4.png') }}">
+              <img src="{{ asset('main-banner/img-2.jpg') }}">
             </div>
             <div class="item">
-              <img src="{{ asset('main-banner/img-4.png') }}">
+              <img src="{{ asset('main-banner/img-3.jpg') }}">
             </div>
         </div>
 

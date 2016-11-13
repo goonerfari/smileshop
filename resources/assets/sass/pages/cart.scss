@@ -4,6 +4,11 @@
         width: 125px;
         height: 125px;
     }
+    .product-name a {
+        font-family: $font-mont;
+        text-transform: capitalize;
+        color: $dark-green;
+    }
 }
 
 @media #{$mobile} {

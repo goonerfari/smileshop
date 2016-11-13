@@ -6155,6 +6155,10 @@ h1, h2, h3 {
   #cart_container .cart-image {
     width: 125px;
     height: 125px; }
+  #cart_container .product-name a {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    color: #143d2d; }
 
 @media (max-width: 767px) {
   #cart_container {
@@ -6176,7 +6180,7 @@ h1, h2, h3 {
     padding-left: 15px;
     padding-right: 15px; }
     #main-banner #main-carousel .carousel-inner {
-      max-height: 350px; }
+      max-height: 450px; }
   #main-banner .carousel-indicators {
     bottom: 0px;
     z-index: 1; }
@@ -6232,7 +6236,7 @@ h1, h2, h3 {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #best-seller {
-    height: 350px; }
+    height: 450px; }
     #best-seller .border {
       padding: 0px;
       height: 47.5%; }
