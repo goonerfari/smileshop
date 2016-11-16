@@ -6738,6 +6738,8 @@ textarea.parsley-error {
   #single-post p {
     font-family: "Sorts Mill Goudy", serif;
     font-size: 20px; }
+    #single-post p:first-child {
+      text-indent: 20px; }
   #single-post img {
     padding: 20px 0px; }
   #single-post h2 {

@@ -34,7 +34,7 @@
 			@foreach ($posts as $post)
 
 				<h2>{{ $post->title }}</h2>
-				<img src="{{ $post->image }}" class="img-responsive" />
+				<a href="{{ route('blog.single', $post->slug) }}"><img src="{{ $post->image }}" class="img-responsive" /></a>
 				<h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5>
 
 				<p>{{ substr(strip_tags($post->body), 0, 250) }}{{ strlen(strip_tags($post->body)) > 250 ? '...' : "" }}</p>
