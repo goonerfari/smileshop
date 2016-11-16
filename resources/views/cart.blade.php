@@ -20,7 +20,7 @@
         @endif
 
         @if (sizeof(Cart::content()) > 0)
-
+        <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
@@ -71,7 +71,7 @@
 
                 </tbody>
             </table>
-
+        </div>
             <a id="continue" style="float:left; margin-right: 10px;" href="/shop" class="btn btn-primary btn-md">Continue <i class="fa fa-shopping-cart" aria-hidden="true"></i></a> &nbsp;
             <div style="float:left">
                 <form action="/emptyCart" method="POST">
@@ -87,7 +87,7 @@
         @else
 
             <h3>You have no items in your shopping cart</h3>
-            <a href="/shop" class="btn btn-primary btn-md">Continue Shopping</a>
+            <a href="/shop" class="btn btn-primary btn-md">Continue <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
         @endif
 
