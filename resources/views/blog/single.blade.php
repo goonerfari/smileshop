@@ -17,7 +17,9 @@
 			    <h2>{{ $post->title }}</h2>
                 <p>{{ $post->body }}</p>
                 <hr>
-                <p>Posted In: {{ $post->category->name }}</p>
+                <p>Posted In: <br>
+                    <b style="text-transform: capitalize;">{{ $post->category->name }}</b>
+                </p>
             </div>
 		</div>
 
