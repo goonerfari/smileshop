@@ -17,7 +17,7 @@
 
         <div class="container single-product">
             <div class="col-md-6 col-xs-12">
-
+                <img class="img-responsive" src="{{ $product->image }}" > 
                 <div class="col-md-12 socials">
                     <h3>Share +</h3>
                     <a href="#"><i class="fa fa-facebook"></i></a>
