@@ -1,13 +1,10 @@
 #main-banner {
     padding-top: 35px;
     padding-bottom: 35px;
-    background-color: $grey;
     #main-carousel {
         padding-left: 15px;
         padding-right: 15px;
-        .carousel-inner {
-            max-height: 450px;
-        }
+        
     }
     .carousel-indicators {
         bottom: 0px;
@@ -75,6 +72,9 @@
 }
 
 @media #{$large} {
+    #main-banner {
+        background-color: $grey;
+    }
     .bulk, .supplements, .nutrition {
         margin-bottom: 5%;
     }
@@ -87,28 +87,48 @@
         height: 450px;
         .border {
             padding: 0px;
-            height: 47.5%;
+            height: 31%;
+            margin-bottom: 15px;
             .caption {
                 padding: 8px 30px;
                 margin-top: 30%;
             }
         }
-        .bulk {
-            background-color: $green;
-        }
-        .supplements {
-            background-color: navy;
-        }
-        .nutrition {
-            background-color: $orange;
-        }
-        
     }
-
+    #main-banner {
+            background-color: $grey;
+        
+        #main-carousel {
+            img {
+                height: 450px;
+            }
+        } 
+    }
 }
 @media #{$tablet} {
+    #main-banner {
+        #main-carousel {
+            .item {
+                img {
+                    height: 450px;
+                }
+            }    
+        } 
+    }
     #best-seller {
-        height: 287.4px;
+        height: 200px;
+        .col-sm-4 {
+            width: 31%;
+        }
+        .border {
+            height: 154px;
+            padding: 0px;
+            margin-right: 24px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
     }
 }
 

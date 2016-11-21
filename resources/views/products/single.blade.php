@@ -10,13 +10,11 @@
             <h4 class="product-path"><a href="/shop">Shop</a> / {{ $product->name }}</h4>
         </div>
         
-
-        <h1 class="text-center">{{ $product->name }}</h1>
-
         <hr>
 
         <div class="container single-product">
-            <div class="col-md-6 col-xs-12">
+
+            <div class="col-md-6 col-xs-12" style="margin-top: 40px;">
                 <img class="img-responsive" src="{{ $product->image }}" > 
                 <div class="col-md-12 socials">
                     <h3>Share +</h3>
@@ -30,8 +28,9 @@
             </div>
 
             <div class="col-md-6 col-xs-12">
+                <h1 class="text-center">{{ $product->name }}</h1>
                 <h3 class="price"><span style="font-size: 27px; margin-right: 5px;">$</span>{{ $product->price }} <span class="cents">99</span></h3>
-                <form action="/cart" method="POST" class="side-by-side">
+                <form action="/cart" method="POST" class="side-by-side" style="display: inline;">
                     {!! csrf_field() !!}
                     <input type="hidden" name="id" value="{{ $product->id }}">
                     <input type="hidden" name="name" value="{{ $product->name }}">

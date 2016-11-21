@@ -1,7 +1,11 @@
 @extends('master')
 
 @section('content')
-
+    
+    <div class="container visible-xs visible-sm" id="search-mobile" style="margin-top: 60px;">
+        @include('includes.search')
+    </div>
+    
     <div class="shop_container container" style="margin-top: 60px;">
 
         <div id="sidebar" class="col-md-4 affix hidden-sm">
@@ -16,12 +20,8 @@
                         <a href="{{ route('products.single', $product->slug) }}"><img class="img-responsive" src="{{ $product->image }}" /></a>
                         
                         <a href="{{ route('products.single', $product->slug) }}"><h3>{{ $product->name }}</h3></a>
-
-                                       
-
                         <p class="product_label">Description:</p>
                         <p class="text-left product_description" style="height: 55px;">{{ $product->description }}</p>
-
                         <p class="product_label">Benefit:</p>
                         <p class="text-left product_benefit" style="height: 55px;">
                             {{ $product->benefit }}
@@ -90,6 +90,5 @@
                 
             });
         });
-        
     </script>
 @endsection

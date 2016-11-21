@@ -4,6 +4,11 @@
 
 @section('content')
      
+    <div class="container visible-xs visible-sm" style="margin-top: 60px;">
+      
+      @include('includes.search')
+
+    </div>
 
     <div id="header" class="container">
 

@@ -45,6 +45,20 @@
             <li class="{{ set_active('cart') }} text-right"><a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> ({{ Cart::instance('main')->count(false) }})</a></li>
 
         </ul>
+
+        <ul id="search-product-form" class="nav navbar-nav navbar-right hidden-sm">
+                <form action="{{ url('search-product') }}" method="POST" role="search">
+                    {{ csrf_field() }}
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q"
+                            placeholder="Search products"> <span class="input-group-btn">
+                            <button type="submit" class="btn btn-green">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </ul>
     </div>
   </div>
 </nav>

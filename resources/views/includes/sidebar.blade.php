@@ -1,4 +1,4 @@
-<div class="hidden-xs" id="sidebar_container">
+<div class="hidden-xs hidden-sm" id="sidebar_container">
     <h3>Browse by Category</h3>
     <ul>
         @foreach($categories as $category)

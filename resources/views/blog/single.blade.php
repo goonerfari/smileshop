@@ -11,15 +11,29 @@
         </div>
     </div>
 	<div id="single-blade-blog" class="container">
-		<div class="col-md-7" id="single-post">
+		<div class="col-xs-12 col-md-7" id="single-post">
 			<div class="col-xs-12">
 				<img src="{{ $post->image }}" class="img-responsive hidden-xs" />
 			    <h2>{{ $post->title }}</h2>
                 <p>{{ $post->body }}</p>
                 <hr>
-                <p>Posted In: <br>
-                    <b style="text-transform: capitalize;">{{ $post->category->name }}</b>
-                </p>
+                <div class="text-left">
+                    <p>Posted In: <br>
+                        <b style="text-transform: capitalize; font-family: 'Baloo Tamma', cursive;">{{ $post->category->name }}</b>
+                    </p>
+                    
+                    <button @click="countUp" class="btn btn-green">
+                        <span style="font-family: 'Baloo Tamma', cursive;">@{{ good }}</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                    </button>
+                    <button @click="countDown" class="btn btn-red">
+                        <span style="font-family: 'Baloo Tamma', cursive;">@{{ bad }}</span>
+                        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="text-right">
+                    
+                </div>
             </div>
 		</div>
 
@@ -99,18 +113,37 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script>
-            $(window).scroll(function() {
-                if($(this).scrollTop() > 141) {
-                    $(".affix").css('margin-top', '-125px');
-                }
-                else {
-                    $(".affix").css('margin-top', '40px');
-                }   
-            });
-        </script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 141) {
+                $(".affix").css('margin-top', '-125px');
+            }
+            else {
+                $(".affix").css('margin-top', '40px');
+            }   
+        });
+    </script>
+    
+    <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
 
+    <script>
+        var app = new Vue({
+          el: '#single-blade-blog',
+          data: {
+            good: 0,
+            bad: 0,
+          },
+          methods: {
+            countUp: function() {
+              this.good += 1
+            },
+            countDown: function() {
+              this.bad -= 1
+            }
+          }
+        })
+    </script>
 
 
 @endsection

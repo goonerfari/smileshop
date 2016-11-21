@@ -1,4 +1,5 @@
-<div id="search-product-form-mobile" class="col-xs-12 visible-xs">
+
+<div id="search-product-form">
     <form action="{{ url('search-product') }}" method="POST" role="search">
         {{ csrf_field() }}
         <div class="input-group">

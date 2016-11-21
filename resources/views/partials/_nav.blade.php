@@ -14,56 +14,6 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Laravel Shopping Cart Example</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="{{ set_active('shop') }}"><a href="/">Home/Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="{{ set_active('wishlist') }}"><a href="/wishlist">Wishlist ({{ Cart::instance('wishlist')->count(false) }})</a></li>
-                <li class="{{ set_active('cart') }}"><a href="/cart">Cart ({{ Cart::instance('main')->count(false) }})</a></li>
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                @if(Auth::user()->is_admin == 1 )
-                                    <li><a href="{{ route('admin/posts') }}">Posts</a></li>
-                                    <li><a href="{{ route('admin/products') }}">Products</a></li>
-                                    <li><a href="{{ route('admin/tags') }}">Tags</a></li>
-
-                                    <li><a href="{{ url('/admin/categories') }}"><i class="fa fa-btn fa-sign-out"></i>Categories</a></li>
-                                @endif 
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
-
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul id="login-div" class="nav navbar-nav">

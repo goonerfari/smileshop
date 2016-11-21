@@ -77,9 +77,6 @@
 }
 
 #single-post {
-    .col-xs-12 {
-        padding: 0px;
-    }
     p {
         font-family: $font-goudy;
         font-size: 20px;
@@ -93,7 +90,7 @@
     padding-top: 40px;
     h2 {
         font-size: 35px;
-        color: $orange;
+        color: $dark-green;
     }
 }
 
@@ -131,8 +128,18 @@
             padding-bottom: 0px;
         }
     }
+    #single-post, #single-post .col-xs-12 {
+        padding: 0px;
+        h2 {
+            margin-top: 35px;
+            margin-bottom: 23px;
+        }
+    }
     .blog {
         margin-top: 40px;
+        .col-xs-12 {
+            padding: 0px;
+        }
         h1 {
             font-size: 45px;
         }
