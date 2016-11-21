@@ -6782,8 +6782,9 @@ textarea.parsley-error {
       margin-bottom: 23px; }
   .blog {
     margin-top: 40px; }
-    .blog .col-xs-12 {
-      padding: 0px; }
+    .blog #blog_posts {
+      padding-left: 0px;
+      padding-right: 0px; }
     .blog h1 {
       font-size: 45px; }
   #single-blade-blog img {
