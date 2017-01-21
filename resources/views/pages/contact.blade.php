@@ -87,7 +87,7 @@
                         <textarea required type="text" minlength="10" maxlength="1000" rows="10" class="form-control" id="message" name="message" placeholder="Enter message"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-dark-green">Submit</button>
+                    <button type="submit" class="btn btn-dark-green" style="margin-bottom: 40px;">Submit</button>
                     
                 </form>
 

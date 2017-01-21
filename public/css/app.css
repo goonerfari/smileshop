@@ -6347,8 +6347,7 @@ h1, h2, h3 {
   #messageus_container form .form-control:focus {
     border-color: rgba(200, 40, 0, 0.8); }
   #messageus_container form .form-control {
-    border-color: #143d2d;
-    margin-bottom: 20px; }
+    border-color: #143d2d; }
   #messageus_container form .btn {
     text-transform: uppercase; }
 
@@ -6839,5 +6838,17 @@ textarea.parsley-error {
 
 #tags a {
   color: #143d2d; }
+
+body .parsley-required {
+  font-family: "Montserrat", sans-serif;
+  padding: 9px 7px 0px;
+  color: rgba(200, 40, 0, 0.8); }
+
+body textarea.parsley-error, body input.parsley-error {
+  background-color: #fff;
+  border-color: red; }
+
+body input.parsley-success, body select.parsley-success, body textarea.parsley-success {
+  background-color: rgba(0, 222, 1, 0.04); }
 
 /*# sourceMappingURL=app.css.map */

@@ -95,6 +95,10 @@ $mobile: "(max-width: 767px)";
 
 @import "pages/cart.scss";
 
+// Checkout
+
+@import "pages/checkout.scss";
+
 // Carousels
 
 @import "sections/carousels.scss";
@@ -148,3 +152,18 @@ $mobile: "(max-width: 767px)";
 // ADMIN PANEL
 @import "sections/admin.scss";
 
+// ERRORS
+body {
+    .parsley-required {
+        font-family: $font-mont;
+        padding: 9px 7px 0px;
+        color: $orange;
+    }
+    textarea.parsley-error, input.parsley-error  {
+        background-color: $white;
+        border-color: red;
+    }
+    input.parsley-success, select.parsley-success, textarea.parsley-success {
+        background-color: rgba(0, 222, 1, 0.04);
+    }
+}

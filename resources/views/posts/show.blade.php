@@ -4,7 +4,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="container" style="margin: 20px 0px;;">
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
 			
@@ -85,7 +85,7 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						{{ Html::linkRoute('posts.index', '<< See All Posts', array(), ['class' => 'btn btn-default btn-block btn-h1-spacing']) }}
+						{{ Html::linkRoute('posts.index', 'See All Posts', array(), ['class' => 'btn btn-success btn-block btn-h1-spacing', 'style' => 'margin-top: 15px;']) }}
 					</div>
 				</div>
 

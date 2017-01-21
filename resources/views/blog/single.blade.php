@@ -4,7 +4,7 @@
 @section('title', "| $titleTag")
 
 @section('content')
-
+<section id="app">
     <div class="container visible-xs">
         <div class="row">
             <img src="{{ $post->image }}" class="img-responsive" style="margin-top: 90px;" />
@@ -31,9 +31,7 @@
                         <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
                     </button>
                 </div>
-                <div class="text-right">
-                    
-                </div>
+                
             </div>
 		</div>
 
@@ -87,31 +85,61 @@
 		</div>
 
 		<div id="comment-form" class="col-xs-12 col-md-7" style="margin: 50px 0px;">
-			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
 
-				<div class="row">
-					<div class="col-md-6">
-						{{ Form::label('name', "Name:") }}
-						{{ Form::text('name', null, ['class' => 'form-control']) }}
-					</div>
+            <form id="contactUsForm" data-parsley-validate action="{{ url('comments.store', '$post->id') }}" method="POST">
+                {{ csrf_field() }}
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input required minlength="3" maxlenth="25" type="name" class="form-control" id="name" name="name" placeholder="Enter name">
+                </div>
 
-					<div class="col-md-6">
-						{{ Form::label('email', 'Email:') }}
-						{{ Form::text('email', null, ['class' => 'form-control']) }}
-					</div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email address</label>
+                    <input required type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                </div>
 
-					<div class="col-md-12">
-						{{ Form::label('comment', "Comment:") }}
-						{{ Form::textarea('comment', null, ['class' => 'form-control', 'rows' => '5']) }}
+                
+                <div class="form-group col-md-12">
+                    <label for="comment">Message</label>
+                    <textarea required type="text" minlength="10" maxlength="1000" rows="10" class="form-control" id="comment" name="comment" placeholder="Enter comment"></textarea>
+                </div>
 
-						{{ Form::submit('Add Comment', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
-					</div>
-				</div>
+                <button type="submit" class="btn btn-dark-green" style="margin-bottom: 40px;">Submit</button>
+                
+            </form>
 
-			{{ Form::close() }}
+            <script src="{{ asset('js/parsley.min.js') }}"></script>
+            <script type="text/javascript">
+              $('#contactUsForm').parsley();
+            </script>
+    
+{{-- 
+    			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
+
+    				<div class="row">
+    					<div class="col-md-6">
+    						{{ Form::label('name', "Name:") }}
+    						{{ Form::text('name', null, ['class' => 'form-control']) }}
+    					</div>
+
+    					<div class="col-md-6">
+    						{{ Form::label('email', 'Email:') }}
+    						{{ Form::text('email', null, ['class' => 'form-control']) }}
+    					</div>
+
+    					<div class="col-md-12">
+    						{{ Form::label('comment', "Comment:") }}
+    						{{ Form::textarea('comment', null, ['class' => 'form-control', 'rows' => '5']) }}
+
+    						{{ Form::submit('Add Comment', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+    					</div>
+    				</div>
+
+    			{{ Form::close() }}
+                 --}}
 		</div>
 	</div>
-
+</section>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>

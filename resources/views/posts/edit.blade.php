@@ -20,7 +20,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="container" style="margin: 20px 0px;">
 		{!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT']) !!}
 		<div class="col-md-8">
 			{{ Form::label('title', 'Title:') }}
@@ -42,7 +42,7 @@
 			{{ Form::textarea('body', null, ['class' => 'form-control']) }}
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-4" style="padding-top: 20px;">
 			<div class="well">
 				<dl class="dl-horizontal">
 					<dt>Created At:</dt>

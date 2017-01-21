@@ -97,20 +97,16 @@ Route::put('posts/{id}', ['uses' => 'PostController@update', 'as' => 'posts.upda
 
 
 // Products
-
 Route::get('products', ['middleware' => 'admin', function () {  
-        $products = Product::all();
-        return view('products.index')->withProducts($products);
-        
+    $products = Product::all();
+    return view('products.index')->withProducts($products);
+
 }]);
 
-Route::group(['middleware' => ['admin']], function () {
-    Route::resource('products', 'ProductController');
 
-    Route::get('products/edit/{id}', ['uses' => 'ProductController@edit', 'as' => 'products.edit']);
-    Route::put('products/{id}', ['uses' => 'ProductController@update', 'as' => 'products.update']);
-    
-});
+Route::resource('products', 'ProductController');
+Route::get('products/edit/{id}', ['uses' => 'ProductController@edit', 'as' => 'products.edit']);
+Route::put('products/{id}', ['uses' => 'ProductController@update', 'as' => 'products.update']);
 
 Route::get('shop/{slug}', ['as' => 'products.single', 'uses' => 'ProductController@getSingle'])->where('slug', '[\w\d\-\_]+');
 // Blog
@@ -128,7 +124,8 @@ Route::get('/', 'PagesController@getIndex');
 
 
 Route::resource('cart', 'CartController');
-Route::get('shop', 'CartController@shop');
+Route::get('shop', 'ProductController@shop');
+Route::get('checkout', 'CartController@checkout');
 Route::delete('emptyCart', 'CartController@emptyCart');
 Route::post('switchToWishlist/{id}', 'CartController@switchToWishlist');
 

@@ -24,6 +24,11 @@ class CartController extends Controller
         return view('cart')->withProducts($products);
     }
 
+    public function checkout()
+    {
+        $products = Product::all();
+        return view('checkout')->withProducts($products);
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -44,8 +49,9 @@ class CartController extends Controller
     public function shop()
     {
         $categories = Category::all();
-        $products = Product::orderBy('id', 'desc')->paginate(12);
-        return view('shop')->withProducts($products)->withCategories($categories);
+        $products = Product::all();
+        return view('shop')->withCategories($categories)->withProducts($products);
+        
     }
     /**
      * Update the specified resource in storage.

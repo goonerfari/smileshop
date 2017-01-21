@@ -20,21 +20,30 @@
 
 @section('content')
 
-	<div class="container">
+	<div class="container" style="margin: 20px 0px;">
 		{!! Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'PUT']) !!}
 		<div class="col-md-8">
 			{{ Form::label('name', 'Name:') }}
-			{{ Form::text('name', null, ["class" => 'form-control input-lg']) }}
+			{{ Form::text('name', null, ["class" => 'form-control']) }}
 
 			{{ Form::label('slug', 'Slug:', ['class' => 'form-spacing-top']) }}
 			{{ Form::text('slug', null, ['class' => 'form-control']) }}
 
 			
-			{{ Form::label('body', "Body:", ['class' => 'form-spacing-top']) }}
-			{{ Form::textarea('body', null, ['class' => 'form-control']) }}
+			{{ Form::label('benefit', "Benefit:", ['class' => 'form-spacing-top']) }}
+			{{ Form::text('benefit', null, ['class' => 'form-control']) }}
+
+			{{ Form::label('price', "Price:", ['class' => 'form-spacing-top']) }}
+			{{ Form::text('price', null, ['class' => 'form-control']) }}
+
+			{{ Form::label('sku', "SKU#:", ['class' => 'form-spacing-top']) }}
+			{{ Form::text('sku', null, ['class' => 'form-control']) }}
+
+			{{ Form::label('manufacturer', "Manufacturer:", ['class' => 'form-spacing-top']) }}
+			{{ Form::text('manufacturer', null, ['class' => 'form-control']) }}
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-4" style="padding-top: 20px;">
 			<div class="well">
 				<dl class="dl-horizontal">
 					<dt>Created At:</dt>

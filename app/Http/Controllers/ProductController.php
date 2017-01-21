@@ -16,7 +16,6 @@ use Image;
 class ProductController extends Controller
 {
 
-   
     /**
      * Display a listing of the resource.
      *
@@ -31,7 +30,7 @@ class ProductController extends Controller
     public function shop()
     {
         $categories = Category::all();
-        $products = Product::orderBy('id', 'desc')->paginate(8);
+        $products = Product::orderBy('id', 'desc')->paginate(12);
         return view('shop')->withProducts($products)->withCategories($categories);
     }
     /**
@@ -144,33 +143,32 @@ class ProductController extends Controller
         if ($request->input('slug') == $product->slug) {
             $this->validate($request, array(
                 'name' => 'required|max:255',
-                'category_id' => 'required|integer',
-                'body'  => 'required'
+                'benefit'  => 'required',
+                'manufacturer'  => 'required',
+                'price'  => 'required',
+                'sku' => 'required|max:7'
             ));
         } else {
         $this->validate($request, array(
-                'title' => 'required|max:255',
+                'name' => 'required|max:255',
                 'slug'  => 'required|alpha_dash|min:5|max:255|unique:products,slug',
-                'category_id' => 'required|integer',
-                'body'  => 'required'
+                'benefit'  => 'required',
+                'manufacturer'  => 'required',
+                'price'  => 'required',
+                'sku' => 'required|max:7'
             ));
         }
 
         // Save the data to the database
         $product = Product::find($id);
 
-        $product->title = $request->input('title');
+        $product->name = $request->input('name');
         $product->slug = $request->input('slug');
-        $product->category_id = $request->input('category_id');
-        $product->body = Purifier::clean($request->input('body'));
+        $product->sku = $request->input('sku');
+        $product->benefit = Purifier::clean($request->input('benefit'));
 
         $product->save();
 
-        if (isset($request->tags)) {
-            $product->tags()->sync($request->tags);
-        } else {
-            $product->tags()->sync(array());
-        }
 
 
         // set flash data with success message

@@ -16,7 +16,7 @@
     
     {{-- @include('partials._nav') --}}
 
-      @yield('content')
+    @yield('content')
 
     <!--FOOTER-->
     @include('includes.footer')
@@ -24,6 +24,6 @@
 
 
 @yield('extra-js')
-
+<script src="{{ asset('js/main.js')}}"></script>
 </body>
 </html>
