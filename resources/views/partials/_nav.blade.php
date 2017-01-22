@@ -68,14 +68,13 @@
 <nav id="nav" class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand visible-xs" href="{{ url('/') }}">Smiles' Herb Shop</a>
-          
         </div>
 
         <div id="navbar" class="collapse navbar-collapse">
@@ -254,8 +253,7 @@
                     </ul>
                 </li>    
             </ul>
-            
-            
+                    
         </div><!--/.nav-collapse -->
 
 
@@ -263,8 +261,7 @@
 </nav>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script>
@@ -287,21 +284,7 @@
     });
 
 </script>        
-// <script>
-//     $(document).ready(function() {
-//         $('#category-nav li').hide();
-//         $('#brand-nav li').hide();
-//         $('#category-nav').click(function () {
 
-//             $('#category-nav li').toggle();
-//         });
-
-//         $('#brand-nav').click(function () {
-
-//             $('#brand-nav li').toggle('fast');
-//         });
-//     });
-// </script>
 <script>
     $(document).ready(function() {
         $('#account-link').mouseover(function (){
