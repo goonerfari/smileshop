@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4">
+        <div class="col-lg-3 col-md-4" style="margin-top: 55px;">
 
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
@@ -72,15 +72,15 @@
                 padding-top: 35px;
             }
             </style>
-            <div class="col-md-6 col-md-offset-3">
-                <a class="btn btn-success pull-right" style="margin-top: 55px; margin-bottom: -15px;" id="admin-btn"><h5>Admin Panel</h5></a>
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <a class="btn btn-success" id="admin-btn" style="margin-bottom: 20px;">Admin Panel</a>
             </div>
                 <div id="admin-log" class="col-md-12 col-xs-12" style="display: none;">
-                    <div style="margin-top: 30px;">
-                        <span class="success" style="display:none; margin-bottom: 15px;">Copied to clipboard</span>
+                    <div style="margin-top: 20px;">
+                        <h3 class="success" style="display:none; margin-bottom: 15px;">Copied to clipboard</h3>
                         <p>
                             <span id="admin-copy">admin@example.com</span>
-                            <button style="font-size: 10px; margin: 10px 5px 0px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="#admin-copy" id="admincopy"><i style="padding-right: 5px;" class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
+                            <button style="font-size: 10px; margin-left: 10px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="admin-copy" id="admincopy"><i style="padding-right: 5px;" class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
                             
                         </p>
                         <p>
@@ -96,7 +96,7 @@
                     $('#admin-log').fadeToggle('slow');
                 });
                 $('#admincopy, #passcopy').click(function () {
-                    $(".success").show().delay(100).fadeOut();
+                    $(".success").show().delay(200).fadeOut();
                 });
             </script>
             <script>

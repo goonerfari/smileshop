@@ -6839,6 +6839,14 @@ textarea.parsley-error {
 #tags a {
   color: #143d2d; }
 
+@media (max-width: 767px) {
+  #admin-log {
+    float: left; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #admin-log {
+    float: left; } }
+
 body .parsley-required {
   font-family: "Montserrat", sans-serif;
   padding: 9px 7px 0px;

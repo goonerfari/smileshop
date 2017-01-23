@@ -152,6 +152,17 @@ $mobile: "(max-width: 767px)";
 // ADMIN PANEL
 @import "sections/admin.scss";
 
+// LOGIN PAGE
+@media #{$mobile} {
+    #admin-log {
+        float: left;
+    }
+}
+@media #{$tablet} {
+    #admin-log {
+        float: left;
+    }
+}
 
 // ERRORS
 body {
@@ -168,3 +179,4 @@ body {
         background-color: rgba(0, 222, 1, 0.04);
     }
 }
+
