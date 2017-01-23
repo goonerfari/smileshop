@@ -86,7 +86,7 @@ class TagController extends Controller
 
         Session::flash('success', 'Successfully saved your new tag!');
 
-        return redirect()->route('tags.show', $tag->id);
+        return redirect()->route('tags.index', $tag->id);
     }
 
     /**

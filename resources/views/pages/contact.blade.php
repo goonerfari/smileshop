@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <div class="container">
+    <div class="container" style="margin-bottom: 15px;">
         <div id="about_container" class="col-xs-12">
             <h1 class="text-center">About Our Shop</h1>
 

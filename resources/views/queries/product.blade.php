@@ -18,7 +18,7 @@
             @foreach($details as $product)
             
                 <div class="product col-md-3">
-                    <img class="img-responsive" src="{{ $product->image }}" />   
+                    <a href="{{ route('products.single', $product->slug) }}"><img class="img-responsive" src="{{ $product->image }}" /></a>
                     <a href="{{ route('products.single', $product->slug) }}"><h3 class="text-center">{{ $product->name }}</h3></a>
 
                     <p class="product_label">Description:</p>

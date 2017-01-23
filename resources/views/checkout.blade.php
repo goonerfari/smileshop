@@ -2,8 +2,10 @@
 
 @section('content')
 <div id="checkout" class="container" style="margin-top: 40px;">
-    <div class="col-md-6 col-xs-12">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
 
+        <img src="about/404.jpg" alt="" class="img-responsive" >
+        <h3>Page under construction</h3>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
         

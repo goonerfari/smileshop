@@ -80,7 +80,7 @@
                     <input style="margin-right: 10px;" type="submit" class="btn btn-danger btn-md" value="Empty Cart">
                 </form>
             </div>
-            <a href="/checkout" class="btn btn-success btn-md" style="float: right; margin-right: 10px;">Checkout</a>
+            <a href="/checkout" class="btn btn-success btn-md" style="float: right; margin-right: 10px;" >Checkout</a>
 
             
 

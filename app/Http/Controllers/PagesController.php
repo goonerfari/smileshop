@@ -95,4 +95,8 @@ class PagesController extends Controller {
     {
         return view('pages.privacy');
     }
+    public function construction()
+    {
+        return view('pages.construction');
+    }
 }

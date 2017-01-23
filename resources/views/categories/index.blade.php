@@ -20,6 +20,7 @@
 					<tr>
 						<th>{{ $category->id }}</th>
 						<td>{{ $category->name }}</td>
+                        <td><a href="{{ route('categories.edit', $category->id) }}" class="btn btn-success btn-md">Edit</a></td>
 					</tr>
 					@endforeach
 				</tbody>
@@ -31,7 +32,7 @@
                 {!! Form::open(['route' => 'categories.store', 'method' => 'POST']) !!}
                     <h2>New Category</h2>
                     {{ Form::label('name', 'Name:') }}
-                    {{ Form::text('name', null, ['class' => 'form-control', 'style' => 'margin-bottom: 20px;']) }}
+                    {{ Form::text('name', null, ['class' => 'form-control', 'style' => 'margin-bottom: 10px;']) }}
 
                     {{ Form::submit('Create New Category', ['class' => 'btn btn-primary btn-block btn-h1-spacing']) }}
                 

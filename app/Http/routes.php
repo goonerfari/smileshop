@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Input;
     Route::get('privacy', 'PagesController@privacy');
 
     Route::get('shop/{slug}', ['as' => 'products.single', 'uses' => 'ProductController@getSingle'])->where('slug', '[\w\d\-\_]+');
+    Route::get('construction', 'PagesController@Construction');
     // Blog Categories
     Route::get('blogcats/allergies', 'BlogController@allergies');
     Route::get('blogcats/cardio', 'BlogController@cardio');
@@ -73,7 +74,8 @@ Route::get('categories', ['middleware' => 'admin', function () {
     return view('categories.index')->withCategories($categories);
 }]);
 Route::resource('categories', 'CategoryController', ['except' => ['create']]);
-
+Route::get('categories/edit/{id}', ['uses' => 'CategoryController@edit', 'as' => 'categories.edit']);
+Route::put('categories/{id}', ['uses' => 'CategoryController@update', 'as' => 'categories.update']);
 
 // Tags 
 
@@ -82,7 +84,8 @@ Route::get('tags', ['middleware' => 'admin', function () {
     return view('tags.index')->withTags($tags);
 }]);
 Route::resource('tags', 'TagController', ['except' => ['create']]);
-
+Route::get('tags/edit/{id}', ['uses' => 'TagController@edit', 'as' => 'tags.edit']);
+Route::put('tags/{id}', ['uses' => 'TagController@update', 'as' => 'tags.update']);
 
 // Posts
 
@@ -102,6 +105,7 @@ Route::get('products', ['middleware' => 'admin', function () {
     return view('products.index')->withProducts($products);
 
 }]);
+
 
 
 Route::resource('products', 'ProductController');
