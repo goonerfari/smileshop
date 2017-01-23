@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-1" style="margin-top: 55px;">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-0" style="margin-top: 55px;">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
@@ -62,17 +62,32 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-4">
 
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-            <div class="col-md-12">
-                <a class="btn btn-sm btn-success pull-right" style="margin-top: 55px; margin-bottom: -15px;" id="admin-btn"><h5>Admin Access</h5></a>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+            <style>
+            
+            p:first-child {
+                padding-top: 35px;
+            }
+            </style>
+            <div class="col-md-6 col-md-offset-3">
+                <a class="btn btn-success pull-right" style="margin-top: 55px; margin-bottom: -15px;" id="admin-btn"><h5>Admin Panel</h5></a>
             </div>
-            <div class="col-md-12">
-                <div id="admin-log" style="display: none; margin-left: 5px;">
-                    <p style="padding-top: 35px;">admin@example.com</p>
-                    <p>admin123</p>
+                <div id="admin-log" class="col-md-12 col-xs-12" style="display: none;">
+                    <div style="margin-top: 30px;">
+                        <span class="success" style="display:none; margin-bottom: 15px;">Copied to clipboard</span>
+                        <p>
+                            <span id="admin-copy">admin@example.com</span>
+                            <button style="font-size: 10px; margin: 10px 5px 0px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="#admin-copy" id="admincopy"><i style="padding-right: 5px;" class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
+                            
+                        </p>
+                        <p>
+                            <span id="pass-copy">admin123</span>
+                            <button style="font-size: 10px; margin-left: 10px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="#pass-copy" id="passcopy"><i style="padding-right: 5px;"class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
+                        </p>
+                    </div> 
                 </div>
             </div>
 
@@ -80,6 +95,13 @@
                 $('#admin-btn').click(function() {
                     $('#admin-log').fadeToggle('slow');
                 });
+                $('#admincopy, #passcopy').click(function () {
+                    $(".success").show().delay(100).fadeOut();
+                });
+            </script>
+            <script>
+                var clipboard = new Clipboard('#admincopy');
+                var clipboard = new Clipboard('#passcopy');
             </script>
         </div>
     </div>

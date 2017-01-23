@@ -33,19 +33,19 @@
             <hr class="visible-xs visible-sm" style="width: 80%; border-color: green; border-top-width: 2px;" style="height: 20px;">
 
             <div class="col-md-12 col-xs-4 border bulk">
-                <a href="#" role="button" aria-pressed="true">
+                <a href="{{ url('construction')}}" role="button" aria-pressed="true">
                     <div class="caption center-block">Bulk Spices</div>
                 </a>
             </div>
 
             <div class="col-md-12 col-xs-4 border supplements">
-                <a href="#" role="button" aria-pressed="true">
+                <a href="{{ url('construction')}}" role="button" aria-pressed="true">
                     <div class="caption center-block">Supplements</div>
                 </a>
             </div>
 
             <div class="col-md-12 col-xs-4 border nutrition">
-                <a href="#" role="button" aria-pressed="true">
+                <a href="{{ url('construction')}}" role="button" aria-pressed="true">
                     <div class="caption center-block">Nutrition</div>
                 </a>
             </div>
