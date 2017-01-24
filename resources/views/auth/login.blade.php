@@ -80,7 +80,7 @@
                         <h3 class="success" style="display:none; margin-bottom: 15px;">Copied to clipboard</h3>
                         <p>
                             <span id="admin-copy">admin@example.com</span>
-                            <button style="font-size: 10px; margin-left: 10px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="admin-copy" id="admincopy"><i style="padding-right: 5px;" class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
+                            <button style="font-size: 10px; margin-left: 10px;"class="btn btn-red" data-clipboard-action="copy" data-clipboard-target="#admin-copy" id="admincopy"><i style="padding-right: 5px;" class="fa fa-clipboard" aria-hidden="true"></i>Copy</button>
                             
                         </p>
                         <p>
@@ -101,7 +101,7 @@
             </script>
             <script>
                 var clipboard = new Clipboard('#admincopy');
-                var clipboard = new Clipboard('#passcopy');
+                var clipboard2 = new Clipboard('#passcopy');
             </script>
         </div>
     </div>
