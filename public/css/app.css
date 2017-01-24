@@ -5851,7 +5851,7 @@ h1, h2, h3 {
     #top #cart-div a {
       padding: 5px 25px 2px;
       letter-spacing: .5pt;
-      font-size: 24px;
+      font-size: 25px;
       color: rgba(0, 239, 141, 0.8); }
       #top #cart-div a:hover, #top #cart-div a:focus {
         color: rgba(0, 239, 141, 0.8); }
@@ -5898,7 +5898,7 @@ h1, h2, h3 {
       font-family: "Baloo Tamma", cursive; }
     #cart-div a, #cart-div a > i, #login-div a, #login-div a > i {
       color: #fff;
-      font-size: 25px; }
+      font-size: 20px; }
   #login-div-mobile li {
     display: inline-block;
     float: left;
@@ -6839,7 +6839,12 @@ textarea.parsley-error {
 #tags a {
   color: #143d2d; }
 
+#login_container {
+  margin-top: 55px; }
+
 @media (max-width: 767px) {
+  #login_container {
+    margin-top: 80px; }
   #admin-log {
     float: left; }
   

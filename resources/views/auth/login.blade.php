@@ -1,9 +1,9 @@
 @extends('master')
 
 @section('content')
-<div class="container">
+<div class="container" id="login_container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-0" style="margin-top: 55px;">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-0">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4" style="margin-top: 55px;">
+        <div class="col-lg-3 col-md-4">
 
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
