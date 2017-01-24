@@ -5903,7 +5903,8 @@ h1, h2, h3 {
     display: inline-block;
     float: left;
     font-family: "Baloo Tamma", cursive;
-    float: right; }
+    float: right;
+    margin-right: 15px; }
   #login-div-mobile #account-link-mobile a, #login-div-mobile #register-link-mobile a {
     color: #000 !important; } }
 
