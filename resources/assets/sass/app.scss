@@ -156,6 +156,9 @@ $mobile: "(max-width: 767px)";
 @media #{$mobile} {
     #admin-log {
         float: left;
+    },
+    .alert .alert-danger {
+        margin-top: 80px;
     }
 }
 @media #{$tablet} {
